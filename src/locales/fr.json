@@ -5,8 +5,10 @@
     "link-to-traps": "Voir les pièges"
   },
   "trapsPage":{
-    "title":"Les Pièges",
-    "description": "Voici les pièges qui menacent la faune",
+    "title":"C'est parti !",
+    "description": "Cliquez sur les pièges mis en évidence pour plus d'informations",
+    "allTrapsFound":"Avez-vous trouvé tous les pièges autour de la maison?",
+    "goQuizz": "Testez vos connaissances avec ce quizz!",
     "link-to-quizz": "Voir le quizz"
   },
   "quizzPage":{

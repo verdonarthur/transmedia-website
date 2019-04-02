@@ -35,7 +35,7 @@
 
   .slide-enter-to,
   .slide-leave {
-    max-height: 100px;
+    max-height: 3000px;
     overflow: hidden;
   }
 
