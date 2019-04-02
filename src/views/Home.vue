@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <h1> {{ $t("landingPage.title") }}</h1>
+      <p> {{$t("landingPage.description")}}</p>
+      <router-link to="/pieges">{{ $t("landingPage.link-to-traps")}}</router-link> 
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
+  name: 'Home',
+  props: {
+    msg: String
   }
 }
 </script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+.home{
+  background-color:cyan;
+  height: 100%;
+}
+</style>

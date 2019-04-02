@@ -1,0 +1,24 @@
+<template>
+  <div class="quizz">
+      <h1> {{ $t("quizzPage.title") }}</h1>
+      <p> {{$t("quizzPage.description")}}</p>
+      <router-link to="/register">{{ $t("quizzPage.link-to-register")}}</router-link> 
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Quizz',
+  props: {
+    msg: String
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+.quizz{
+  background-color:green;
+  height: 100%;
+}
+</style>

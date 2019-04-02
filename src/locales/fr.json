@@ -1,0 +1,22 @@
+{
+  "landingPage": {
+    "title": "BirdLife Suisse présente...",
+    "description": "Les pièges pour la faune sont fréquents dans notre environnement, avec ce guide découvrez les plus fréquents et comment les éviter pour sauvegarder la biodiversité.",
+    "link-to-traps": "Voir les pièges"
+  },
+  "trapsPage":{
+    "title":"Les Pièges",
+    "description": "Voici les pièges qui menacent la faune",
+    "link-to-quizz": "Voir le quizz"
+  },
+  "quizzPage":{
+    "title":"Quizz",
+    "description":"Répondez aux questions",
+    "link-to-register": "Inscrivez-vous"
+  },
+  "registerPage":{
+    "title":"Register",
+    "description":"Inscrivez-vous !"
+  }
+  
+}
