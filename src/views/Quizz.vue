@@ -19,6 +19,6 @@ export default {
 <style scoped>
 .quizz{
   background-color:green;
-  height: 100%;
+  height:100%;
 }
 </style>
