@@ -2,6 +2,7 @@
   <div class="traps">
     <h1>{{ $t("trapsPage.title") }}</h1>
     <p class="cliquez">{{$t("trapsPage.description")}}</p>
+    <img class= "cheminee" src="../assets/website_cheminee.png" alt="cheminee cliquable">
     <div class="bottom">
       <div class="link_to_quizz">
         <p class="trapsFound">{{$t("trapsPage.allTrapsFound")}}</p>
@@ -47,6 +48,11 @@ p {
   color: #555;
   padding: 0px 50px;
   line-height: 1.3em;
+}
+.cheminee
+{
+background-image: url("../assets/website_cheminee.png");
+
 }
 
 .bottom {
