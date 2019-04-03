@@ -1,32 +1,53 @@
 <template>
   <div class="traps">
+    <section class="pieges">
+      <header>
     <h1>{{ $t("trapsPage.title") }}</h1>
     <p class="cliquez">{{$t("trapsPage.description")}}</p>
+      </header>
     <div class="cheminee_bloc">
       <img src="../assets/website_cheminee.png" alt="cheminee cliquable">
     </div>
+    </section>
     <div class="bottom">
       <div class="link_to_quizz">
         <p class="trapsFound">{{$t("trapsPage.allTrapsFound")}}</p>
         <p class="goQuizz">{{$t("trapsPage.goQuizz")}}</p>
         <router-link to="/quizz">
-          <i class="fas fa-arrow-circle-down"></i>
+          <i id="next" class="fas fa-arrow-circle-down" @click = "hideAbsoluteElements"></i>
         </router-link>
       </div>
     </div>
   </div>
 </template>
 <script>
+
 export default {
   name: "Traps",
   props: {
     msg: String
-  }
-};
+  },
+  methods:
+  {
+    hideAbsoluteElements(){
+      var allAbsolute = document.getElementsByClassName("cheminee_bloc");
+      var i;
+      for (i = 0; i < allAbsolute.length; i++) {
+      allAbsolute[i].style.visibility = "hidden";
+      }
+    }
+}
+}
+
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
-.traps {
+
+header{
+  padding-bottom:50px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.pieges {
   background-color: #beeaf5;
   background-image: url("../assets/website_pieges.png");
   background-repeat: no-repeat;
@@ -38,7 +59,7 @@ export default {
 
 /* PC VERSION ------------------------------------------------------------------------------------------- */
 @media screen and (min-width: 769px) {
-  .traps {
+  .pieges {
 
     background-position: top right;
     background-size: 45%;
@@ -64,20 +85,27 @@ p {
   line-height: 1.3em;
 }
 .cheminee_bloc {
+opacity:0;
   width: 100%;
   position: absolute;
   text-align: right;
   top: 74vmin;
+  animation: appear 1s forwards;
+  animation-delay: 0.9s;
+  
 }
+@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 .cheminee_bloc img {
-  /* margin-left:45%;
-margin-top: 32%; */
   width: 21%;
   margin-right: 14%;
-  /*margin-right:20px;*/
   animation-name: test;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
+  animation-delay: 2s;
 }
 
 @keyframes test {
@@ -93,15 +121,15 @@ margin-top: 32%; */
 }
 
 .bottom {
-  display:none;
   background-color: #61a52e;
-  margin-top: 2150px;
   padding: 40px;
+  margin-top: -2px;
 }
 
 .link_to_quizz {
   background-color: #eee;
   padding: 25px;
+  text-align: center;
 }
 
 .trapsFound {
