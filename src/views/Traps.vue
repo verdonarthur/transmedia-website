@@ -2,7 +2,9 @@
   <div class="traps">
     <h1>{{ $t("trapsPage.title") }}</h1>
     <p class="cliquez">{{$t("trapsPage.description")}}</p>
-    <img class= "cheminee" src="../assets/website_cheminee.png" alt="cheminee cliquable">
+    <div class="cheminee_bloc">
+        <img src="../assets/website_cheminee.png" alt="cheminee cliquable">
+    </div>
     <div class="bottom">
       <div class="link_to_quizz">
         <p class="trapsFound">{{$t("trapsPage.allTrapsFound")}}</p>
@@ -27,8 +29,8 @@ export default {
 .traps {
   background-color: #beeaf5;
   background-image: url("../assets/website_pieges.png");
-  background-position: top;
   background-repeat: no-repeat;
+  background-size: 100%;
   height: 2500px;
   text-align: center;
 }
@@ -49,9 +51,21 @@ p {
   padding: 0px 50px;
   line-height: 1.3em;
 }
-.cheminee
+.cheminee_bloc
 {
-background-image: url("../assets/website_cheminee.png");
+  width:100%;
+position:absolute;
+text-align: right;
+top:74vmin;
+}
+.cheminee_bloc img
+{
+/* margin-left:45%;
+margin-top: 32%; */
+width:21%;
+margin-right:14%;
+/*margin-right:20px;*/
+
 
 }
 
