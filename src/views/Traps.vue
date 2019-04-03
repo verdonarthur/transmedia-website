@@ -1,10 +1,10 @@
 <template>
   <div class="traps">
     <section class="pieges">
-      <header>
+      <div class="header">
     <h1>{{ $t("trapsPage.title") }}</h1>
     <p class="cliquez">{{$t("trapsPage.description")}}</p>
-      </header>
+      </div>
     <div class="cheminee_bloc">
       <img src="../assets/website_cheminee.png" alt="cheminee cliquable">
     </div>
@@ -43,7 +43,7 @@ export default {
 
 <style scoped>
 
-header{
+.header{
   padding-bottom:50px;
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -69,13 +69,13 @@ header{
 
 h1 {
   font-size: 2.5em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: rgb(38, 148, 38);
   padding: 50px 50px 0px 50px;
 }
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
 }
 .cliquez {

@@ -1,7 +1,8 @@
 {
   "landingPage": {
     "title": "Pièges pour la faune:",
-    "description": "comment les éviter?",
+    "sous-titre": "comment les éviter?",
+    "description": "La faune vivant sur le pas de notre porte est tous les jours menacée par différents pièges. De la cheminée aux clôtures, en passant par les vitres et balustrades en verre, des dangers potentiels pour les animaux sont présents sur nos maisons et dans nos jardins. Apprenez à les reconnaître, découvrez les solutions pour les éviter et aidez la faune vivant autour de chez vous!",
     "link-to-traps": "Voir les pièges"
   },
   "trapsPage":{
