@@ -3,7 +3,7 @@
     <h1>{{ $t("trapsPage.title") }}</h1>
     <p class="cliquez">{{$t("trapsPage.description")}}</p>
     <div class="cheminee_bloc">
-        <img src="../assets/website_cheminee.png" alt="cheminee cliquable">
+      <img src="../assets/website_cheminee.png" alt="cheminee cliquable">
     </div>
     <div class="bottom">
       <div class="link_to_quizz">
@@ -31,9 +31,21 @@ export default {
   background-image: url("../assets/website_pieges.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 2500px;
   text-align: center;
+  height:560vw;
 }
+
+
+/* PC VERSION ------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 769px) {
+  .traps {
+
+    background-position: top right;
+    background-size: 45%;
+  }
+}
+/* ----------------------------------------------------------------------------------------------------------*/
+
 h1 {
   font-size: 2.5em;
   font-family: Arial, Helvetica, sans-serif;
@@ -51,25 +63,37 @@ p {
   padding: 0px 50px;
   line-height: 1.3em;
 }
-.cheminee_bloc
-{
-  width:100%;
-position:absolute;
-text-align: right;
-top:74vmin;
+.cheminee_bloc {
+  width: 100%;
+  position: absolute;
+  text-align: right;
+  top: 74vmin;
 }
-.cheminee_bloc img
-{
-/* margin-left:45%;
+.cheminee_bloc img {
+  /* margin-left:45%;
 margin-top: 32%; */
-width:21%;
-margin-right:14%;
-/*margin-right:20px;*/
+  width: 21%;
+  margin-right: 14%;
+  /*margin-right:20px;*/
+  animation-name: test;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
 
-
+@keyframes test {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .bottom {
+  display:none;
   background-color: #61a52e;
   margin-top: 2150px;
   padding: 40px;
