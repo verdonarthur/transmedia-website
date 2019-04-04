@@ -1,45 +1,81 @@
 <template>
   <div class="traps">
+    <section class="pieges">
+      <div class="header">
     <h1>{{ $t("trapsPage.title") }}</h1>
     <p class="cliquez">{{$t("trapsPage.description")}}</p>
+      </div>
+    <div class="cheminee_bloc">
+      <img src="../assets/website_cheminee.png" alt="cheminee cliquable">
+    </div>
+    </section>
     <div class="bottom">
       <div class="link_to_quizz">
         <p class="trapsFound">{{$t("trapsPage.allTrapsFound")}}</p>
         <p class="goQuizz">{{$t("trapsPage.goQuizz")}}</p>
         <router-link to="/quizz">
-          <i class="fas fa-arrow-circle-down"></i>
+          <i id="next" class="fas fa-arrow-circle-down" @click = "hideAbsoluteElements"></i>
         </router-link>
       </div>
     </div>
   </div>
 </template>
 <script>
+
 export default {
   name: "Traps",
   props: {
     msg: String
-  }
-};
+  },
+  methods:
+  {
+    hideAbsoluteElements(){
+      var allAbsolute = document.getElementsByClassName("cheminee_bloc");
+      var i;
+      for (i = 0; i < allAbsolute.length; i++) {
+      allAbsolute[i].style.visibility = "hidden";
+      }
+    }
+}
+}
+
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
-.traps {
+
+.header{
+  padding-bottom:50px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.pieges {
   background-color: #beeaf5;
   background-image: url("../assets/website_pieges.png");
-  background-position: top;
   background-repeat: no-repeat;
-  height: 2500px;
+  background-size: 100%;
   text-align: center;
+  height:560vw;
 }
+
+
+/* PC VERSION ------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 769px) {
+  .pieges {
+
+    background-position: top right;
+    background-size: 45%;
+  }
+}
+/* ----------------------------------------------------------------------------------------------------------*/
+
 h1 {
   font-size: 2.5em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: rgb(38, 148, 38);
   padding: 50px 50px 0px 50px;
 }
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
 }
 .cliquez {
@@ -48,16 +84,52 @@ p {
   padding: 0px 50px;
   line-height: 1.3em;
 }
+.cheminee_bloc {
+opacity:0;
+  width: 100%;
+  position: absolute;
+  text-align: right;
+  top: 74vmin;
+  animation: appear 1s forwards;
+  animation-delay: 0.9s;
+  
+}
+@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.cheminee_bloc img {
+  width: 21%;
+  margin-right: 14%;
+  animation-name: test;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+@keyframes test {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 .bottom {
   background-color: #61a52e;
-  margin-top: 2150px;
   padding: 40px;
+  margin-top: -2px;
 }
 
 .link_to_quizz {
   background-color: #eee;
   padding: 25px;
+  text-align: center;
 }
 
 .trapsFound {

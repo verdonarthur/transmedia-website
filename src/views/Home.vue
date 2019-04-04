@@ -2,9 +2,9 @@
   <div class="home">
     <img src="../assets/logo-birdlife.png" alt="BirdLife logo" class="logo">
     <h1>{{ $t("landingPage.title") }}</h1>
-
-    <p class="sous-titre">{{$t("landingPage.description")}}</p>
-    <router-link to="/pieges">{{ $t("landingPage.link-to-traps")}}</router-link>
+    <p class="sous-titre">{{$t("landingPage.sous-titre")}}</p>
+    <p class="description">{{$t("landingPage.description")}}</p>
+    <router-link to="/pieges"><i id="next" class="fas fa-arrow-circle-down"></i></router-link>
   </div>
 </template>
 
@@ -26,26 +26,38 @@ export default {
 }
 
 h1 {
-  font-size: 2.3em;
-  line-height: 1em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 7vw;
+  line-height:9vw;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: #555;
-  padding: 50px 50px 0px 50px;
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.25vh;
+  padding: 0 12vw;
 }
 
-.sous-titre
-{
-font-size: 1.8em;
-
+.sous-titre {
+  font-size: 7vw;
+  margin: 0 0 3vh 0;
 }
+
+.description {
+  text-align: left;
+
+color: #006EAB;
+}
+
 .logo {
-  width: 40%;
-  margin: 30px;
+  height: 15vh;
+  margin: 8vh 0 5vh 0;
+}
+
+i {
+  margin-top: 5vmax;
+  font-size: 8vmax;
+  color: #555;
 }
 </style>
