@@ -4,15 +4,11 @@
       <p class="modal-card-title">{{$t("popupPages." + popupRef +"."+ popupPage +".title")}}</p>
       <p class="modal-card-subtitle">{{$t("popupPages." + popupRef +"."+ popupPage +".subTitle")}}</p>
     </header>
-    <section class="modal-card-body">{{$t("popupPages." + popupRef +"."+ popupPage +".mainText")}}
-    <img src="../assets/logo-birdlife.png">
-    
-    
-    </section>
+    <section class="modal-card-body">{{$t("popupPages." + popupRef +"."+ popupPage +".mainText")}}</section>
     <template v-if="popupPage === 'problem'">
-    <footer class="modal-card-foot">
-      <button @click="loadSolution" class="button is-primary">{{$t("popupPages.learnMore")}}</button>
-    </footer>
+      <footer class="modal-card-foot">
+        <button @click="loadSolution" class="button is-primary">{{$t("popupPages.learnMore")}}</button>
+      </footer>
     </template>
   </div>
 </template>
@@ -21,7 +17,7 @@ export default {
   name: "Popup",
   props: {
     popupRef: String,
-    popupImages:String
+    popupImages: String
   },
   data() {
     return {

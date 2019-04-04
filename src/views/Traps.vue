@@ -6,9 +6,12 @@
     <p class="cliquez">{{$t("trapsPage.description")}}</p>
       </div>
     <div class="cheminee_bloc">
-      <img src="../assets/website_cheminee.png" alt="cheminee cliquable">
+      <img src="../assets/website_cheminee.png" @click="openPopUp('chimney')" alt="cheminee cliquable">
     </div>
     </section>
+    <b-modal :active.sync="isPopupActive" has-modal-card>
+      <Popup :popupRef=popupRef></Popup>
+    </b-modal>
     <div class="bottom">
       <div class="link_to_quizz">
         <p class="trapsFound">{{$t("trapsPage.allTrapsFound")}}</p>
@@ -21,11 +24,18 @@
   </div>
 </template>
 <script>
-
+import Popup from "../components/Popup";
 export default {
   name: "Traps",
-  props: {
-    msg: String
+  props: {},
+  components: {
+    Popup
+  },
+  data() {
+    return {
+      isPopupActive: false,
+      popupRef: String,
+    };
   },
   methods:
   {
@@ -35,6 +45,10 @@ export default {
       for (i = 0; i < allAbsolute.length; i++) {
       allAbsolute[i].style.visibility = "hidden";
       }
+    },
+    openPopUp(ref) {
+      this.isPopupActive = true;
+      this.popupRef = ref;
     }
 }
 }
