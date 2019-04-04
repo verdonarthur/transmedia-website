@@ -4,21 +4,36 @@
     "description": "comment les éviter?",
     "link-to-traps": "Voir les pièges"
   },
-  "trapsPage":{
-    "title":"C'est parti !",
+  "trapsPage": {
+    "title": "C'est parti !",
     "description": "Cliquez sur les pièges mis en évidence pour plus d'informations",
-    "allTrapsFound":"Avez-vous trouvé tous les pièges autour de la maison?",
+    "allTrapsFound": "Avez-vous trouvé tous les pièges autour de la maison?",
     "goQuizz": "Testez vos connaissances avec ce quizz!",
     "link-to-quizz": "Voir le quizz"
   },
-  "quizzPage":{
-    "title":"Quizz",
-    "description":"Répondez aux questions",
+  "popupPages": {
+    "chimney": {
+      "problem": {
+        "title": "Les cheminées",
+        "subTitle": "Pourquoi sont-elles dangereuses pour les oiseaux?",
+        "mainText": "Les oiseaux aiment chanter depuis des perchoirs élevés. Aussi incroyable que cela paraisse, il leur arrive parfois de tomber dans la cheminée ou le tuyau de la gouttière. Les juvéniles inexpérimentés, surtout, se retrouvent de temps en temps dans un poêle, une cheminée ou une gouttière et doivent être délivrés par les pompiers ou le ramoneur. Certains oiseaux ont même l’ habitude de nicher directement dans la cheminée.De ce fait, si la cheminée est plutôt étroite et le nid volumineux, l’ évacuation des fumées ne se fait plus correctement et il y a un d’ envahissement de la fumée dans la pièce."
+      },
+      "solution": {
+        "title": "Les cheminées",
+        "subTitle":"Solutions possibles",
+        "mainText":"Les chapeaux de cheminée évitent que les oiseaux ne tombent dans l'ouvrage. Ils ne doivent pas avoir d’ouverture excédant 25 mm. Un grillage ou un chapeau de cheminée installé par un spécialiste empêche le colmatage par nidification et ainsi une intoxication à la fumée. On peut offrir aux oiseaux un site de nidification alternatif en installant des nichoirs adaptés sur la maison ou un arbre à proximité. Les gouttières peuvent être fermées avec des grilles. Les feuilles mortes doivent être régulièrement évacuées."
+      }
+    },
+    "learnMore": "Comment contrer ?"
+  },
+  "quizzPage": {
+    "title": "Quizz",
+    "description": "Répondez aux questions",
     "link-to-register": "Inscrivez-vous"
   },
-  "registerPage":{
-    "title":"Register",
-    "description":"Inscrivez-vous !"
+  "registerPage": {
+    "title": "Register",
+    "description": "Inscrivez-vous !"
   }
-  
+
 }
