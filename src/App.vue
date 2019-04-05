@@ -1,11 +1,12 @@
 <template>
   <div id="app">
     <transition name="slide">
-      <router-view/>
+      <router-view />
     </transition>
   </div>
 </template>
 <script>
+
 </script>
 <style>
 /* Enter and leave animations can use different */
@@ -40,7 +41,4 @@ body,
   height: 100%;
 }
 
-h1 {
-  margin-top: 0;
-}
 </style>

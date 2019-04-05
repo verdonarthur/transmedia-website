@@ -1,10 +1,12 @@
-<template>
+<template  >
   <div class="home">
     <img src="../assets/logo-birdlife.png" alt="BirdLife logo" class="logo">
     <h1>{{ $t("landingPage.title") }}</h1>
     <p class="sous-titre">{{$t("landingPage.sous-titre")}}</p>
     <p class="description">{{$t("landingPage.description")}}</p>
-    <router-link to="/pieges"><i id="next" class="fas fa-arrow-circle-down"></i></router-link>
+    <router-link to="/pieges">
+      <i id="next" class="fas fa-arrow-circle-down"></i>
+    </router-link>
   </div>
 </template>
 
@@ -13,6 +15,18 @@ export default {
   name: "Home",
   props: {
     msg: String
+  },
+  methods: {
+    handleScroll() {
+      console.log("scroll");
+      this.$router.push("/pieges");
+    }
+  },
+  mounted() {
+    document.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
   }
 };
 </script>
@@ -21,13 +35,13 @@ export default {
 <style scoped>
 .home {
   background-color: #eee;
-  height: 100%;
+  height: 101%;
   text-align: center;
 }
 
 h1 {
   font-size: 7vw;
-  line-height:9vw;
+  line-height: 9vw;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: #555;
@@ -47,7 +61,7 @@ p {
 .description {
   text-align: left;
 
-color: #006EAB;
+  color: #006eab;
 }
 
 .logo {

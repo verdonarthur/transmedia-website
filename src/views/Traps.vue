@@ -24,33 +24,33 @@
   </div>
 </template>
 <script>
-import Popup from "../components/Popup";
+import Popup from '../components/Popup'
 export default {
-  name: "Traps",
+  name: 'Traps',
   props: {},
   components: {
     Popup
   },
-  data() {
+  data () {
     return {
       isPopupActive: false,
-      popupRef: String,
-    };
+      popupRef: String
+    }
   },
   methods:
   {
-    hideAbsoluteElements(){
-      var allAbsolute = document.getElementsByClassName("cheminee_bloc");
-      var i;
+    hideAbsoluteElements () {
+      var allAbsolute = document.getElementsByClassName('cheminee_bloc')
+      var i
       for (i = 0; i < allAbsolute.length; i++) {
-      allAbsolute[i].style.visibility = "hidden";
+        allAbsolute[i].style.visibility = 'hidden'
       }
     },
-    openPopUp(ref) {
-      this.isPopupActive = true;
-      this.popupRef = ref;
+    openPopUp (ref) {
+      this.isPopupActive = true
+      this.popupRef = ref
     }
-}
+  }
 }
 
 </script>
@@ -69,7 +69,6 @@ export default {
   text-align: center;
   height:560vw;
 }
-
 
 /* PC VERSION ------------------------------------------------------------------------------------------- */
 @media screen and (min-width: 769px) {
@@ -106,7 +105,7 @@ opacity:0;
   top: 74vmin;
   animation: appear 1s forwards;
   animation-delay: 0.9s;
-  
+
 }
 @keyframes appear {
   from { opacity: 0; }

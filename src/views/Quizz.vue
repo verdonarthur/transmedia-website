@@ -14,24 +14,24 @@
 </template>
 
 <script>
-import Popup from "../components/Popup";
+import Popup from '../components/Popup'
 export default {
-  name: "Quizz",
+  name: 'Quizz',
   props: {},
   components: {
     Popup
   },
-  data() {
+  data () {
     return {
       isPopupActive: false,
       popupRef: String,
-      popupImages : "../assets/logo-birdlife.png"
-    };
+      popupImages: '../assets/logo-birdlife.png'
+    }
   },
   methods: {
-    openPopUp(ref) {
-      this.isPopupActive = true;
-      this.popupRef = ref;
+    openPopUp (ref) {
+      this.isPopupActive = true
+      this.popupRef = ref
     }
   }
 }

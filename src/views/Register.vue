@@ -2,7 +2,7 @@
   <div class="register">
       <h1> {{ $t("registerPage.title") }}</h1>
       <p> {{$t("registerPage.description")}}</p>
-      
+
   </div>
 </template>
 
