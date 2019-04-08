@@ -25,6 +25,67 @@
         "mainText":"Les chapeaux de cheminée évitent que les oiseaux ne tombent dans l'ouvrage. Ils ne doivent pas avoir d’ouverture excédant 25 mm. Un grillage ou un chapeau de cheminée installé par un spécialiste empêche le colmatage par nidification et ainsi une intoxication à la fumée. On peut offrir aux oiseaux un site de nidification alternatif en installant des nichoirs adaptés sur la maison ou un arbre à proximité. Les gouttières peuvent être fermées avec des grilles. Les feuilles mortes doivent être régulièrement évacuées."
       }
     },
+    "homeHoles": {
+      "problem": {
+        "title": "Les ouvertures de la maison",
+        "subTitle": "Pourquoi sont-elles importantes?",
+        "mainText": "Les vieilles maisons comprennent de nombreuses ouvertures qui permettent à diverses espèces animales d’utiliser la cave, la façade ou le toit comme abri. L’entretoit, les avant-toits, les combles, les caissons de stores, les plaques de protections, les poutres apparentes sont autant d’endroits de nidification ou d’abri pour différents animaux. Lors de rénovations, de nettoyages de la maison, voire de nouvelles constructions, les accès et sites de nidification susmentionnés sont parfois ignorés et/ou détruits. Une destruction des nids ou une entrave à l’élevage des jeunes est interdit par la loi."
+      },
+      "solution": {
+        "title": "Les ouvertures de la maison",
+        "subTitle":"Solutions pour conserver les ouvertures de la maison",
+        "mainText":"Lors de rénovations, il est important de conserver les lieux de vie des chauves-souris et des oiseaux, ainsi que leurs accès. Les travaux ne doivent pas être effectués pendant la période d’élevage des jeunes, c’est-à-dire d’avril à août. Les produits d’entretien du bois, les vernis, les peintures et les crépis devraient être biocompatibles. Lorsque les accès ou sites de nidification sont fermés en dehors de la période de reproduction, des habitats de remplacement accessibles doivent être créés ailleurs. Des nichoirs peuvent représenter une alternative."
+      }
+    },
+    "windows": {
+      "problem": {
+        "title": "Les vitres",
+        "subTitle": "Pourquoi sont-elles dangereuses pour les oiseaux et chauve-souris?",
+        "mainText": "Le verre est utilisé à de multiples endroits, on fabrique aujourd’hui des façades, des balustrades de balcon, des passerelles, des jardins d’hiver, des salles d’attente et des parois anti-bruit. La plupart des architectes et propriétaires de bâtiments ignorent les effets mortels de ce matériau. Les oiseaux ne sont pas capables de reconnaître les vitres comme obstacle. Ils croient parfois voir dans la réflexion de l’environnement un habitat adéquat et essaient de s’y rendre. Selon les estimations, des centaines de milliers d’oiseaux et de chauve-souris meurent chaque année en Suisse des suites d’une collision contre une surface vitrée."
+      },
+      "solution": {
+        "title": "Les vitres",
+        "subTitle":"Solutions au problème des vitres",
+        "mainText":"De manière générale, le verre devrait être rendu visible avant même sa mise en place grâce à des marquages graphiques. Ces derniers sont appliqués par sérigraphie, gravure, sablage, etc. Après la construction, si l’on remarque des collisions, des autocollants ou des films peuvent être appliqués sur la surface vitrée. Les silhouettes noires de rapaces n’ont aucun effet répulsif sur les oiseaux, contrairement aux marquages clairs qui sont en général plus visibles. De plus, les oiseaux passent par de petites ouvertures. Les marquage ou autocollants ne devraient donc pas laisser d’ouvertures plus grandes qu’une paume de main (max. 10 cm)."
+      }
+    },
+    "lawnMower": {
+      "problem": {
+        "title": "Les tondeuses-robots",
+        "subTitle": "Pourquoi sont-elles dangereuses pour la petite faune?",
+        "mainText": "Il est en effet très confortable de faire tondre son gazon par une tondeuse-robot, mais cette dernière ne tond pas seulement l’herbe. Elle attrape aussi tout ce qui se trouve sur son passage. Les jeunes hérissons, les petites grenouilles et les orvets sont hachés par les lames lorsqu’ils se trouvent sur le chemin de la tondeuse. "
+      },
+      "solution": {
+        "title": "Les tondeuses-robots",
+        "subTitle":"Solutions aux tondeuses-robot",
+        "mainText":"Les tondeuses-robots devraient être évitées ou en aucun cas fonctionner la nuit. La surface à tondre devrait aussi être contrôlée le jour pour détecter la présence d’éventuels animaux. Lorsque l’on fauche des bords de haie avec une débroussailleuse, il faut aussi vérifier au préalable qu’il n’y ait pas de hérisson ou d’autres animaux."
+      }
+    },
+    "pool": {
+      "problem": {
+        "title": "Les piscines et tonneaux d’eau de pluie",
+        "subTitle": "Pourquoi sont-ils dangereux?",
+        "mainText": "Les points d’eau attirent de nombreux animaux, notamment les oiseaux et insectes. Lors de chaudes journées d’été, ces animaux n’ont souvent que peu de possibilités de boire ou de se baigner en milieu construit et sont donc aussi attirés par les piscines, étangs et tonneaux de pluie. Lorsque ces points d’eau sont profonds et ont des parois abruptes, il arrive que les animaux y tombent et n’arrivent plus à en sortir. Des parois verticales de quelques centimètres sont déjà fatales. "
+      },
+      "solution": {
+        "title": "Les piscines et tonneaux d’eau de pluie",
+        "subTitle":"Solutions aux piscines et tonneaux de pluie",
+        "mainText":"Il est important de créer des «issues de secours» à chaque point d’eau problématique. Il peut s’agir de pierres empilées en pyramide, d’une planche placée en biais ou d’une branche épaisse. Une planche flottante à bords en biais dans les plans d’eau dépourvus de végétation permet aux insectes et autres petits animaux de reprendre pied. Le mieux est toutefois de construire les plans d’eau avec des rives en pente douce. Les tonneaux et autres récipients d’eau de pluie devraient être recouverts pour éviter que les oiseaux n’y tombent et que les moustiques n’y pondent. Les piscines devraient également être recouvertes le soir et en hiver à hauteur de sol."
+      }
+    },
+    "fence": {
+      "problem": {
+        "title": "Les murs et clôtures",
+        "subTitle": "Pourquoi sont-ils dangereux?",
+        "mainText": "Les quartiers récents de villas familiales ressemblent souvent à des forteresses. Les parois anti-bruit et pare-vue, les clôtures et les haies empêchent tout échange avec le monde extérieur. Pour de nombreux animaux, les murs de quelques centimètres de haut constituent déjà des obstacles. A partir de 20 cm, ils deviennent problématiques pour les hérissons. Les murs à partir de 50 cm, les parois anti-bruit et pare-vue, ainsi que les clôtures qui vont jusqu’au sol cloisonnent si fortement le milieu construit que de nombreux animaux n’atteignent plus les îlots d’habitats naturels qui s’y trouvent. Les routes deviennent des gorges dangereuses sans abris ni possibilités d’évitement pour les animaux. "
+      },
+      "solution": {
+        "title": "Les murs et clôtures",
+        "subTitle":"Solutions aux murs et clôtures",
+        "mainText":"Lors de la construction, il est important de réfléchir où les séparations sont effectivement nécessaires et encourager la mise en réseau des espaces. La connexion peut être améliorée si les clôtures s’arrêtent à environ 15 cm du sol. Les murs et les clôtures peuvent souvent être remplacés par des haies d’arbustes indigènes qui offrent à la fois une protection visuelle et un habitat précieux. Si on ne peut pas renoncer à un mur, il faudrait munir celui-ci de petits passages au niveau du sol de 15-20 cm de haut et de large. Les prairies et haies devraient se situer au niveau de la route et ne pas être surélevées au-dessus d’un seuil. "
+      }
+    },
+
     "learnMore": "Comment contrer ?"
   },
   "quizzPage": {

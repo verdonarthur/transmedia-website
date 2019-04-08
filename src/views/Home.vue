@@ -12,30 +12,29 @@
 
 <script>
 export default {
-  name: "Home",
+  name: 'Home',
   props: {
     msg: String
   },
   methods: {
-    handleScroll() {
-      console.log("scroll");
-      this.$router.push("/pieges");
-    }
+    handleScroll () {
+        this.$router.push('/pieges')
+        }
+        },
+  mounted () {
+    document.addEventListener('scroll', this.handleScroll)
   },
-  mounted() {
-    document.addEventListener("scroll", this.handleScroll);
-  },
-  destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
+  destroyed () {
+    document.removeEventListener('scroll', this.handleScroll)
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .home {
   background-color: #eee;
-  height: 101%;
+  height: 101%; /* Doit être >100% pour que la fonction de scroll fonctionne */
   text-align: center;
 }
 
