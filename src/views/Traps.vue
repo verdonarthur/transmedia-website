@@ -23,6 +23,7 @@
     <div id="piscine_bloc" class="cliquable">
       <img src="../assets/piscine.png" alt="piscine cliquable">
     </div>
+    <div class="stylePC"></div>
     </section>
     <div class="bottom">
       <div class="link_to_quizz">
@@ -64,24 +65,12 @@ export default {
   height:70vmin;
 }
 .pieges {
-  background-color: #beeaf5;
   background-image: url("../assets/fond_website.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
   height:645vw;
 }
-
-
-/* PC VERSION ------------------------------------------------------------------------------------------- */
-@media screen and (min-width: 769px) {
-  .pieges {
-
-    background-position: top right;
-    background-size: 45%;
-  }
-}
-/* ----------------------------------------------------------------------------------------------------------*/
 
 h1 {
   font-size: 8.5vmin;
@@ -228,6 +217,7 @@ p {
   background-color: #eee;
   padding: 45px;
   text-align: center;
+  z-index:999;
 }
 
 .trapsFound {
@@ -248,4 +238,102 @@ i {
   font-size: 3em;
   color: #555;
 }
+
+
+/* PC VERSION ------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 769px) {
+  .pieges {
+    background-color:#fff;
+    background-position: top right;
+    background-size: 35%;
+    height:224vmax;
+  }
+
+  .header{
+    padding:6vmax 0;
+    background-color:#fff;
+height: 20vmax;
+}
+
+h1 {
+  font-size: 3vmax;
+  padding: 0 20vmax;
+}
+p {
+  font-size: 1.7vmax;
+}
+.cliquez {
+  padding: 0 10vmax;
+}
+
+.stylePC
+{
+  position:absolute;
+  background-color: beige;
+  z-index: 99;
+  height:204vmax;
+  width:65%;
+}
+/*----------------CHEMINEE-----------------------*/
+#cheminee_bloc {
+  top: 33vmax;
+}
+#cheminee_bloc img {
+  width: 6%;
+  margin-right: 5%;
+}
+
+/*----------------VITRE-----------------------*/
+#vitre_bloc {
+  text-align: right;
+  top: 51vmax;
+}
+
+#vitre_bloc img {
+  width: 9%;
+  margin-right: 10.5%;
+}
+
+/*----------------CLOTURE DU FOND-----------------------*/
+#clotureBack_bloc {
+  text-align: right;
+  top: 86vmax;
+}
+
+#clotureBack_bloc img {
+  width: 15%;
+  margin-right: 20.1%;
+}
+/*----------------CLOTURE DU PREMIER PLAN-----------------------*/
+#clotureFront_bloc {
+  text-align:right;
+  top: 172vmax;
+}
+
+#clotureFront_bloc img {
+  width: 35%;  
+}
+/*----------------TONDEUSE-----------------------*/
+#tondeuse_bloc {
+  text-align:right;
+  top: 121vmax;
+}
+
+#tondeuse_bloc img {
+  width: 10%;
+  margin-right: 21%;
+}
+/*----------------PISCINE-----------------------*/
+#piscine_bloc {
+  text-align: right;
+  top: 137vmax;
+}
+
+#piscine_bloc img {
+  width: 22%;
+}
+
+}
+/* ----------------------------------------------------------------------------------------------------------*/
+
 </style>
