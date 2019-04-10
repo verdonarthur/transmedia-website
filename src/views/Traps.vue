@@ -1,113 +1,81 @@
 <template>
-  <div id="traps" class="traps">
-    <div id="top">
-      <div class="previous">
-        <router-link to="/">
-          <i id="next" class="fas fa-arrow-circle-up" @click="hideAbsoluteElements"></i>
-        </router-link>
-      </div>
-    </div>
-    <section id="trapMain" class="pieges">
+  <div class="traps">
+    <section class="pieges">
       <div class="header">
-        <h1>{{ $t("trapsPage.title") }}</h1>
-        <p class="cliquez">{{$t("trapsPage.description")}}</p>
+    <h1>{{ $t("trapsPage.title") }}</h1>
+    <p class="cliquez">{{$t("trapsPage.description")}}</p>
       </div>
-      <div class="cheminee_bloc">
-        <img
-          src="../assets/website_cheminee.png"
-          @click="openPopUp('chimney')"
-          alt="cheminee cliquable">
-      </div>
-      <p @click="openPopUp('homeHoles')">Pop-Up Trous dans la maison</p>
-      <p @click="openPopUp('windows')">Pop-Up Fenêtre</p>
-      <p @click="openPopUp('fence')">Pop-Up Grillage</p>
-      <p @click="openPopUp('pool')">Pop-Up piscine</p>
-      <p @click="openPopUp('lawnMower')">Pop-Up tondeuse</p>
+    <div id="cheminee_bloc" class="cliquable">
+      <img src="../assets/cheminee.png" alt="cheminee cliquable">
+    </div>
+    <div id="vitre_bloc" class="cliquable">
+      <img src="../assets/fenetre.png" alt="vitre cliquable">
+    </div>
+    <div id="clotureBack_bloc" class="cliquable">
+      <img src="../assets/clotureFond.png" alt="cloture du fond cliquable">
+    </div>
+    <div id="clotureFront_bloc" class="cliquable">
+      <img src="../assets/cloturePremirPlan.png" alt="cloture du premier plan cliquable">
+    </div>
+    <div id="tondeuse_bloc" class="cliquable">
+      <img src="../assets/tondeuse.png" alt="tondeuse cliquable">
+    </div>
+    <div id="piscine_bloc" class="cliquable">
+      <img src="../assets/piscine.png" alt="piscine cliquable">
+    </div>
     </section>
-    <b-modal :active.sync="isPopupActive" has-modal-card>
-      <Popup :popupRef="popupRef"></Popup>
-    </b-modal>
     <div class="bottom">
       <div class="link_to_quizz">
         <p class="trapsFound">{{$t("trapsPage.allTrapsFound")}}</p>
         <p class="goQuizz">{{$t("trapsPage.goQuizz")}}</p>
         <router-link to="/quizz">
-          <i id="next" class="fas fa-arrow-circle-down" @click="hideAbsoluteElements"></i>
+          <i id="next" class="fas fa-arrow-circle-down" @click = "hideAbsoluteElements"></i>
         </router-link>
       </div>
     </div>
   </div>
 </template>
 <script>
-import Popup from '../components/Popup'
+
 export default {
-  name: 'Traps',
-  props: {},
-  components: {
-    Popup
+  name: "Traps",
+  props: {
+    msg: String
   },
-  data () {
-    return {
-      isPopupActive: false,
-      popupRef: String,
-      scrollEvent: 0
-    }
-  },
-  methods: {
-    hideAbsoluteElements () {
-      var allAbsolute = document.getElementsByClassName('cheminee_bloc')
-      var i
+  methods:
+  {
+    hideAbsoluteElements(){
+      var allAbsolute = document.getElementsByClassName("cheminee_bloc");
+      var i;
       for (i = 0; i < allAbsolute.length; i++) {
-        allAbsolute[i].style.visibility = 'hidden'
-      }
-    },
-    openPopUp (ref) {
-      this.isPopupActive = true
-      this.popupRef = ref
-    },
-    handleScroll () {
-      if (this.scrollEvent == 0)
-      {
-        this.scrollEvent ++;
-        return
-      }
-      if(window.scrollY == 0){
-        this.$router.push('/')
-      }
-      else if (window.innerHeight + window.scrollY >= document.getElementById('traps').offsetHeight
-      && document.getElementById('traps').offsetHeight > window.innerHeight ) {
-        this.$router.push('/quizz')
+      allAbsolute[i].style.visibility = "hidden";
       }
     }
-    
-  },
-  mounted () {
-    document.addEventListener('scroll', this.handleScroll)
-    window.scrollTo({ top: document.getElementById('top').offsetHeight})
-  },
-  destroyed () {
-    document.removeEventListener('scroll', this.handleScroll)
-  }
 }
+}
+
 </script>
 
 <style scoped>
-.header {
-  padding-bottom: 50px;
+
+.header{
+  padding-bottom:50px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 .pieges {
   background-color: #beeaf5;
-  background-image: url("../assets/website_pieges.png");
+  background-image: url("../assets/fond_website.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
-  height: 560vw;
+  height:645vw;
 }
+
 
 /* PC VERSION ------------------------------------------------------------------------------------------- */
 @media screen and (min-width: 769px) {
   .pieges {
+
     background-position: top right;
     background-size: 45%;
   }
@@ -116,13 +84,13 @@ export default {
 
 h1 {
   font-size: 2.5em;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: rgb(38, 148, 38);
   padding: 50px 50px 0px 50px;
 }
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
 }
 .cliquez {
@@ -131,45 +99,126 @@ p {
   padding: 0px 50px;
   line-height: 1.3em;
 }
-.cheminee_bloc {
-  opacity: 0;
+
+/*-------------ELEMENTS CLIQUABLES----------------*/
+
+.cliquable
+{
+  opacity:0;
   width: 100%;
-  position: absolute;
-  text-align: right;
-  top: 74vmin;
+  position: absolute; 
   animation: appear 1s forwards;
   animation-delay: 0.9s;
 }
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
-.cheminee_bloc img {
-  width: 21%;
-  margin-right: 14%;
-  animation-name: test;
+.cliquable img
+{
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-delay: 2s;
 }
 
-@keyframes test {
+/*----------------CHEMINEE-----------------------*/
+#cheminee_bloc {
+  text-align: right;
+  top: 95vmin;
+}
+
+#cheminee_bloc img {
+  width: 21%;
+  margin-right: 7%;
+  animation-name: boingPetit;
+}
+
+/*----------------VITRE-----------------------*/
+#vitre_bloc {
+  text-align: right;
+  top: 150vmin;
+}
+
+#vitre_bloc img {
+  width: 25%;
+  margin-right: 30%;
+  animation-name: boingPetit;
+}
+
+/*----------------CLOTURE DU FOND-----------------------*/
+#clotureBack_bloc {
+  text-align: left;
+  top: 250vmin;
+}
+
+#clotureBack_bloc img {
+  width: 42%;
+  margin-right: 10%;
+  transform-origin: center right;
+  animation-name: boingGrand;
+}
+/*----------------CLOTURE DU PREMIER PLAN-----------------------*/
+#clotureFront_bloc {
+  top: 500vmin;
+}
+
+#clotureFront_bloc img {
+  width: 100%;
+  animation-name: boingGrand;
+}
+/*----------------TONDEUSE-----------------------*/
+#tondeuse_bloc {
+  text-align:left;
+  top: 350vmin;
+}
+
+#tondeuse_bloc img {
+  width: 35%;
+  margin-left: 10%;
+  animation-name: boingPetit;
+}
+/*----------------PISCINE-----------------------*/
+#piscine_bloc {
+  text-align: right;
+  top: 400vmin;
+}
+
+#piscine_bloc img {
+  width: 65%;
+  margin-right: 0%;
+  animation-name: boingGrand;
+}
+
+/*----------------ANIMATIONS-----------------------*/
+
+@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes boingPetit {
   0% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.15);
   }
   100% {
     transform: scale(1);
   }
 }
 
+@keyframes boingGrand {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/*----------------Bloc footer-----------------------*/
 .bottom {
   background-color: #61a52e;
   padding: 40px;
@@ -199,8 +248,5 @@ i {
   margin-top: 15px;
   font-size: 3em;
   color: #555;
-}
-#top{
-  text-align:center;
 }
 </style>
