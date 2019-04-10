@@ -59,8 +59,9 @@ export default {
 <style scoped>
 
 .header{
-  padding-bottom:50px;
+  padding:20vmin 0;
   background-color: rgba(255, 255, 255, 0.8);
+  height:70vmin;
 }
 .pieges {
   background-color: #beeaf5;
@@ -83,20 +84,20 @@ export default {
 /* ----------------------------------------------------------------------------------------------------------*/
 
 h1 {
-  font-size: 2.5em;
+  font-size: 8.5vmin;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: rgb(38, 148, 38);
-  padding: 50px 50px 0px 50px;
+  padding: 0 20vmin;
 }
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2em;
+  font-size: 5vmin;
 }
 .cliquez {
   font-style: italic;
   color: #555;
-  padding: 0px 50px;
+  padding: 0 20vmin;
   line-height: 1.3em;
 }
 
@@ -151,7 +152,7 @@ p {
 #clotureBack_bloc img {
   width: 42%;
   margin-right: 10%;
-  transform-origin: center right;
+  transform-origin: bottom right;
   animation-name: boingGrand;
 }
 /*----------------CLOTURE DU PREMIER PLAN-----------------------*/
@@ -161,6 +162,7 @@ p {
 
 #clotureFront_bloc img {
   width: 100%;
+  transform-origin: center bottom;
   animation-name: boingGrand;
 }
 /*----------------TONDEUSE-----------------------*/
@@ -172,6 +174,7 @@ p {
 #tondeuse_bloc img {
   width: 35%;
   margin-left: 10%;
+  transform-origin: center bottom;
   animation-name: boingPetit;
 }
 /*----------------PISCINE-----------------------*/
@@ -219,15 +222,11 @@ p {
 
 
 /*----------------Bloc footer-----------------------*/
-.bottom {
-  background-color: #61a52e;
-  padding: 40px;
-  margin-top: -2px;
-}
+
 
 .link_to_quizz {
   background-color: #eee;
-  padding: 25px;
+  padding: 45px;
   text-align: center;
 }
 
