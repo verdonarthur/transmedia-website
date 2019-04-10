@@ -18,9 +18,9 @@ export default {
   },
   methods: {
     handleScroll () {
-        this.$router.push('/pieges')
-        }
-        },
+      this.$router.push('/pieges')
+    }
+  },
   mounted () {
     document.addEventListener('scroll', this.handleScroll)
   },

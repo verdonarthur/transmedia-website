@@ -1,30 +1,35 @@
 <template>
-  <div class="traps">
+  <div id="traps" class="traps">
     <section class="pieges">
       <div class="header">
     <h1>{{ $t("trapsPage.title") }}</h1>
     <p class="cliquez">{{$t("trapsPage.description")}}</p>
       </div>
     <div id="cheminee_bloc" class="cliquable">
-      <img src="../assets/cheminee.png" alt="cheminee cliquable">
+      <img src="../assets/cheminee.png"
+              @click="openPopUp('chimney')" alt="cheminee cliquable">
     </div>
     <div id="vitre_bloc" class="cliquable">
-      <img src="../assets/fenetre.png" alt="vitre cliquable">
+      <img src="../assets/fenetre.png"
+          @click="openPopUp('windows')"  alt="vitre cliquable">
     </div>
     <div id="clotureBack_bloc" class="cliquable">
-      <img src="../assets/clotureFond.png" alt="cloture du fond cliquable">
+      <img src="../assets/clotureFond.png" @click="openPopUp('fence')" alt="cloture du fond cliquable">
     </div>
     <div id="clotureFront_bloc" class="cliquable">
-      <img src="../assets/cloturePremirPlan.png" alt="cloture du premier plan cliquable">
+      <img src="../assets/cloturePremirPlan.png" @click="openPopUp('fence')" alt="cloture du premier plan cliquable">
     </div>
     <div id="tondeuse_bloc" class="cliquable">
-      <img src="../assets/tondeuse.png" alt="tondeuse cliquable">
+      <img src="../assets/tondeuse.png" @click="openPopUp('lawnMower')" alt="tondeuse cliquable">
     </div>
     <div id="piscine_bloc" class="cliquable">
-      <img src="../assets/piscine.png" alt="piscine cliquable">
+      <img src="../assets/piscine.png" @click="openPopUp('pool')" alt="piscine cliquable">
     </div>
     <div class="stylePC"></div>
     </section>
+    <b-modal :active.sync="isPopupActive" has-modal-card>
+      <Popup :popupRef="popupRef"></Popup>
+    </b-modal>
     <div class="bottom">
       <div class="link_to_quizz">
         <p class="trapsFound">{{$t("trapsPage.allTrapsFound")}}</p>
@@ -37,24 +42,54 @@
   </div>
 </template>
 <script>
-
+import Popup from '../components/Popup'
 export default {
-  name: "Traps",
-  props: {
-    msg: String
+  name: 'Traps',
+  props: {},
+  components: {
+    Popup
   },
-  methods:
-  {
-    hideAbsoluteElements(){
-      var allAbsolute = document.getElementsByClassName("cheminee_bloc");
-      var i;
+  data () {
+    return {
+      isPopupActive: false,
+      popupRef: String,
+      scrollEvent: 0
+    }
+  },
+  methods: {
+    hideAbsoluteElements () {
+      var allAbsolute = document.getElementsByClassName('cheminee_bloc')
+      var i
       for (i = 0; i < allAbsolute.length; i++) {
-      allAbsolute[i].style.visibility = "hidden";
+        allAbsolute[i].style.visibility = 'hidden'
+      }
+    },
+    openPopUp (ref) {
+      this.isPopupActive = true
+      this.popupRef = ref
+    },
+    handleScroll () {
+      if (this.scrollEvent === 0) {
+        this.scrollEvent++
+        return
+      }
+      if (window.scrollY === 0) {
+        this.$router.push('/')
+      } else if (window.innerHeight + window.scrollY >= document.getElementById('traps').offsetHeight &&
+      document.getElementById('traps').offsetHeight > window.innerHeight) {
+        this.$router.push('/quizz')
       }
     }
-}
-}
 
+  },
+  mounted () {
+    document.addEventListener('scroll', this.handleScroll)
+    // window.scrollTo({ top: document.getElementById('top').offsetHeight})
+  },
+  destroyed () {
+    document.removeEventListener('scroll', this.handleScroll)
+  }
+}
 </script>
 
 <style scoped>
@@ -96,7 +131,7 @@ p {
 {
   opacity:0;
   width: 100%;
-  position: absolute; 
+  position: absolute;
   animation: appear 1s forwards;
   animation-delay: 0.9s;
 }
@@ -209,9 +244,7 @@ p {
   }
 }
 
-
 /*----------------Bloc footer-----------------------*/
-
 
 .link_to_quizz {
   background-color: #eee;
@@ -238,7 +271,6 @@ i {
   font-size: 3em;
   color: #555;
 }
-
 
 /* PC VERSION ------------------------------------------------------------------------------------------- */
 @media screen and (min-width: 769px) {
@@ -311,7 +343,7 @@ p {
 }
 
 #clotureFront_bloc img {
-  width: 35%;  
+  width: 35%;
 }
 /*----------------TONDEUSE-----------------------*/
 #tondeuse_bloc {
