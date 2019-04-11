@@ -88,8 +88,16 @@
     "learnMore": "Comment contrer ?"
   },
   "quizzPage": {
-    "title": "Quizz",
-    "description": "Répondez aux questions",
+    "title": "Concours pièges pour la faune !",
+    "sous-titre": "Comment les éviter?",
+    "description": "Testez vos connaissances avec 6 questions sur ce que vous avez lu précédemment",
+    "description2": "Gagnez des prix !",
+    "startButton" : "C'est parti !",
+    "prices": {
+      "coupon":"1 bon cadeau",
+      "ticket":"1 entrée au centre nature de la Sauge",
+      "brochures":"5 collections de prospectus"
+    },
     "link-to-register": "Inscrivez-vous"
   },
   "registerPage": {
