@@ -20,13 +20,16 @@
   transition-duration: 1.3s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
+.slide-leave-active .cliquable {
+  visibility: hidden;
+}
 
 .slide-enter-to,
 .slide-leave {
   max-height: 100%;
   overflow: hidden;
 }
-
+/* Cacher les éléments cliquables sur la page des pièges avant de faire les transitions vers les autres pages*/
 .slide-enter,
 .slide-leave-to {
   overflow: hidden;
@@ -39,6 +42,12 @@ html,
 body,
 #app {
   height: 100%;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.25vh;
+  padding: 0 12vw;
 }
 
 </style>

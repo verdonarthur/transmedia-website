@@ -1,5 +1,13 @@
 <template>
   <div id="traps" class="traps">
+    <div class="linkToHome">
+      <router-link to="/">
+          <i class="fas fa-arrow-left"></i>
+      </router-link>
+      </div>
+      <div class="downArrow">
+          <i class="fas fa-arrow-down"></i>
+      </div>
     <section class="pieges">
       <div class="header">
     <h1>{{ $t("trapsPage.title") }}</h1>
@@ -68,31 +76,28 @@ export default {
       this.isPopupActive = true
       this.popupRef = ref
     },
-    handleScroll () {
-      if (this.scrollEvent === 0) {
-        this.scrollEvent++
-        return
-      }
-      if (window.scrollY === 0) {
-        this.$router.push('/')
-      } else if (window.innerHeight + window.scrollY >= document.getElementById('traps').offsetHeight &&
-      document.getElementById('traps').offsetHeight > window.innerHeight) {
-        this.$router.push('/quizz')
-      }
-    }
-
-  },
-  mounted () {
-    document.addEventListener('scroll', this.handleScroll)
-    // window.scrollTo({ top: document.getElementById('top').offsetHeight})
-  },
-  destroyed () {
-    document.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
 
 <style scoped>
+.linkToHome{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 2vmin;
+  color: #555;
+}
+
+.downArrow{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 2vmin;
+  color: #555;
+}
+.downArrow i{ color:#eee;}
+.linkToHome i {color: #555}
 
 .header{
   padding:20vmin 0;

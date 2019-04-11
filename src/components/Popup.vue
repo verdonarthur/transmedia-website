@@ -11,7 +11,7 @@
     </section>
     <template v-if="popupPage === 'problem'">
       <footer class="modal-card-foot">
-        <button @click="loadSolution" class="button is-success">{{$t("popupPages.learnMore")}}</button>
+        <button @click="loadSolution" class="button is-medium">{{$t("popupPages.learnMore")}}</button>
       </footer>
     </template>
   </div>
@@ -44,5 +44,20 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style>
+.button{
+  text-align:center;
+  display:block;
+  margin:auto;
+  background-color:rgb(38, 148, 38);
+  color:white;
+}
+
+.modal-card{
+
+}
+.modal-card p
+{
+  text-align: justify;
+}
 </style>
