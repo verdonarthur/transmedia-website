@@ -105,7 +105,7 @@ export default {
   height:70vmin;
 }
 .pieges {
-  background-image: url("../assets/fond_website.jpg");
+  background-image: url("../assets/fond_website-compressed.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
@@ -114,7 +114,6 @@ export default {
 
 h1 {
   font-size: 8.5vmin;
-  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: rgb(38, 148, 38);
   padding: 0 20vmin;

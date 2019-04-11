@@ -1,13 +1,10 @@
 <template>
     <div>
     <p>
-        {{$t("popupPages." + popupRef +"."+ popupPage +".mainText")}}</p>
-
-       <!-- <img v-if="popupPage === 'solution'" src="../assets/website_cheminee.png">
-        <img v-if="popupPage === 'solution'" src="../assets/website_cheminee.png">
-        <img v-if="popupPage === 'solution'" src="../assets/website_cheminee.png">
-        <img v-if="popupPage === 'solution'" src="../assets/website_cheminee.png"> -->
-    </div>
+        {{$t("popupPages." + popupRef +"."+ popupPage +".mainText")}}</p>    
+        <img class="chimney_img" v-if="popupPage === 'solution'" src="../assets/solutions/cheminee1.jpg">
+        <img class="chimney_img" v-if="popupPage === 'solution'" src="../assets/solutions/cheminee2.jpg">
+        </div>
 </template>
 <script>
 export default {
@@ -19,5 +16,9 @@ export default {
 }
 </script>
 <style>
-
+.chimney_img
+{
+  width:45%;
+  margin: 10px 5px;
+}
 </style>
