@@ -46,7 +46,7 @@ body,
 
 p {
   font-family: 'Lato', sans-serif;
-  font-size: 2.25vh;
+  font-size: 2.20vh;
   padding: 0 12vw;
 }
 

@@ -76,7 +76,7 @@ background:none;
 }
 .popUpTitle
 {
-font-size:1.4em;
+font-size:3.3vh;
 flex-shrink:1;
 line-height:1.5;
 color: #eee;
@@ -84,10 +84,11 @@ color: #eee;
 .popUpSubtitle
 {
   color:rgb(38, 148, 38);
-  font-size:1.15em;
+  font-size: 2.5vh;
 }
 .modal-card-body
 {
+  line-height:1.3em;
   padding:0px 35px;
   color:#eee;
   background-color: transparent;
