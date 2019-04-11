@@ -10,7 +10,7 @@
         <img src ="../assets/setBrochure.png">
        </div>
       <div class="column">
-        <img src ="../assets/tickets.png"> 
+        <img src ="../assets/tickets.png">
       </div>
   <div class="column">
     <img src ="../assets/bonAchat.png">
@@ -75,7 +75,7 @@ h1 {
 p {
   font-family: "Roboto", sans-serif;
   font-size: 2.25vh;
-  
+
 }
 
 .sous-titre {
@@ -92,7 +92,6 @@ p {
   height: 15vh;
   margin: 4vh 0 5vh 0;
 }
-
 
 h2{
   margin-top:4vh;

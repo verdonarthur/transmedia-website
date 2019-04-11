@@ -5,7 +5,7 @@
 
         <img class="solution" v-if="popupPage === 'solution'" src="../assets/solutions/cloture1.jpg">
      <img class="solution" v-if="popupPage === 'solution'" src="../assets/solutions/cloture2.jpg">
-        
+
     </div>
 </template>
 <script>

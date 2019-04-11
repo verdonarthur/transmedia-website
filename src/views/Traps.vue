@@ -75,7 +75,7 @@ export default {
     openPopUp (ref) {
       this.isPopupActive = true
       this.popupRef = ref
-    },
+    }
   }
 }
 </script>
@@ -306,7 +306,7 @@ p {
 {
   position:absolute;
   background-color: beige;
-  z-index: 99;
+  z-index: 40;
   height:204vmax;
   width:65%;
 }

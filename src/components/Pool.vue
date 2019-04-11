@@ -4,7 +4,7 @@
         {{$t("popupPages." + popupRef +"."+ popupPage +".mainText")}}</p>
 
         <img class="solutionPool" v-if="popupPage === 'solution'" src="../assets/solutions/piscine.jpg">
-        
+
     </div>
 </template>
 <script>
