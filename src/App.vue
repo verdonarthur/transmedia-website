@@ -45,9 +45,14 @@ body,
 }
 
 p {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.25vh;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.20vh;
   padding: 0 12vw;
+}
+
+h1, h2, h3, button
+{
+  font-family: 'Fjalla One', sans-serif;
 }
 
 </style>

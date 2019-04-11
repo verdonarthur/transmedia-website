@@ -3,10 +3,7 @@
     <p>
         {{$t("popupPages." + popupRef +"."+ popupPage +".mainText")}}</p>
 
-        <img v-if="popupPage === 'solution'" src="../assets/website_cheminee.png">
-        <img v-if="popupPage === 'solution'" src="../assets/website_cheminee.png">
-        <img v-if="popupPage === 'solution'" src="../assets/website_cheminee.png">
-        <img v-if="popupPage === 'solution'" src="../assets/website_cheminee.png">
+        <img class="problem" v-if="popupPage === 'problem'" src="../assets/solutions/robot.jpg">
     </div>
 </template>
 <script>
@@ -19,5 +16,8 @@ export default {
 }
 </script>
 <style>
-
+.problem
+{
+  
+}
 </style>
