@@ -96,8 +96,8 @@ export default {
   font-size: 2vmin;
   color: #555;
 }
-.downArrow i{ color:#eee;}
-.linkToHome i {color: #555}
+.downArrow i{ color:rgba(238, 238, 238, 0.8);}
+.linkToHome i {color: rgba(110, 110, 110, 0.4);}
 
 .header{
   padding:20vmin 0;

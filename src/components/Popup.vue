@@ -1,5 +1,5 @@
 <template>
-  <div class="modal-card" style="width: auto">
+  <div class="modal-card" style="width: 100%">
    <header class="modal-card-head">
       <h1 class="modal-card-title">{{$t("popupPages." + popupRef +"."+ popupPage +".title")}}</h1>
     </header>
