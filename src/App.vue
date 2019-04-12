@@ -1,12 +1,11 @@
 <template>
   <div id="app">
-<transition name="slide">
-      <router-view />
-</transition>
+    <transition name="slide">
+      <router-view/>
+    </transition>
   </div>
 </template>
 <script>
-
 </script>
 <style>
 /* Enter and leave animations can use different */
@@ -20,7 +19,8 @@
   transition-duration: 1.3s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
-.slide-leave-active .cliquable, .slide-leave-active .stylePC {
+.slide-leave-active .cliquable,
+.slide-leave-active .stylePC {
   visibility: hidden;
 }
 
@@ -45,13 +45,14 @@ body,
 }
 
 p {
-  font-family: 'Lato', sans-serif;
-  font-size: 2.20vh;
+  font-family: "Lato", sans-serif;
+  font-size: 2.2vh;
 }
 
-h1, h2, h3, button
-{
-  font-family: 'Fjalla One', sans-serif;
+h1,
+h2,
+h3,
+button {
+  font-family: "Fjalla One", sans-serif;
 }
-
 </style>

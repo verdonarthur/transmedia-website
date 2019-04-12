@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import BaseQuestion from './components/Questions/BaseQuestion'
 
 Vue.use(Router)
 
@@ -16,26 +17,36 @@ export default new Router({
     {
       path: '/pieges',
       name: 'pieges',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('./views/Traps.vue')
-    },
-    {
-      path: '/quizz',
-      name: 'quizz',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('./views/Quizz.vue')
     },
     {
       path: '/register',
       name: 'register',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('./views/Register.vue')
+    },
+    // --------- QUIZZ --------
+    {
+      path: '/quizz',
+      name: 'quizz',
+      component: () => import('./views/Quizz.vue')
+    },
+    // --------- QUESTION --------,
+    {
+      path: '/quizz/question',
+      component: BaseQuestion,
+      children: [
+        {
+          path: '1',
+          component: () => import('./views/Questions/Question1.vue')
+        },
+        // -------- INSCRIPTION AND CONFIRMATION
+        {
+          path: 'inscription',
+          component: () => import('./views/Inscription.vue')
+        }
+      ]
+
     }
+
   ]
 })
