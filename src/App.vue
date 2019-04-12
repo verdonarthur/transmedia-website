@@ -47,7 +47,6 @@ body,
 p {
   font-family: 'Lato', sans-serif;
   font-size: 2.20vh;
-  padding: 0 12vw;
 }
 
 h1, h2, h3, button

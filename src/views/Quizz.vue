@@ -75,7 +75,6 @@ h1 {
 p {
   font-family: "Roboto", sans-serif;
   font-size: 2.25vh;
-
 }
 
 .sous-titre {
