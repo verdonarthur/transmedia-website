@@ -41,7 +41,9 @@
 html,
 body,
 #app {
+  
   height: 100%;
+  
 }
 
 p {
