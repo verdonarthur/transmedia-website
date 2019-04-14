@@ -1,5 +1,5 @@
 <template  >
-  <div class="home">
+  <div  id="home" class="home">
     <img src="../assets/logo-birdlife.png" alt="BirdLife logo" class="logo">
     <h1>{{ $t("landingPage.title") }}</h1>
     <p class="sous-titre">{{$t("landingPage.sous-titre")}}</p>
@@ -18,7 +18,11 @@ export default {
   },
   methods: {
     handleScroll () {
-      this.$router.push('/pieges')
+      if((window.scrollY + window.innerHeight )>= document.getElementById('home').offsetHeight)
+      {
+        window.scrollTo(0,0);
+        this.$router.push('/pieges')}
+        
     }
   },
   mounted () {
@@ -34,7 +38,7 @@ export default {
 <style scoped>
 .home {
   background-color: #eee;
-  height: 101%; /* Doit être >100% pour que la fonction de scroll fonctionne */
+  min-height: 101%; /* Doit être >100% pour que la fonction de scroll fonctionne */
   text-align: center;
 }
 
@@ -48,7 +52,7 @@ h1 {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 2.25vh;
+  font-size: 3.25vw;
   padding: 0 12vw;
 }
 
@@ -69,8 +73,8 @@ p {
 }
 
 i {
-  margin-top: 5vmax;
-  font-size: 8vmax;
+  margin-top: 5vh;
+  font-size: 8vh;
   color: #555;
 }
 </style>
