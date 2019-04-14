@@ -7,6 +7,7 @@ export default class QuizzStorage {
 
   saveResults (idQuestion, result) {
     this.results[idQuestion] = result
+    this.save()
   }
 
   static initQuizzStoage () {
