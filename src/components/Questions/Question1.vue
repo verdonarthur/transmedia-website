@@ -1,7 +1,7 @@
 <template>
   <div class="section">
-    <b-field :label="$t('registerPage.address')">
-        <b-input v-model="value" type="number" :value="value" maxlength="3" v-on:input="change" />
+    <b-field :label="$t('question1.address')">
+        <b-input v-model="value" type="number" :value="heightClosure" maxlength="3" v-on:input="change" />
       </b-field>
   </div>
 </template>
@@ -18,15 +18,15 @@ export default {
   },
   data () {
     return {
-      value: 0
+      heightClosure: 0
     }
   },
   mounted () {
-    this.$emit('change', sha1(this.value))
+    this.$emit('change', sha1(this.heightClosure))
   },
   methods: {
     change () {
-      this.$emit('change', sha1(this.value))
+      this.$emit('change', sha1(this.heightClosure))
     }
   }
 }
