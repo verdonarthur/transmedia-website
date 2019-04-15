@@ -9,6 +9,28 @@
 </template>
 
 <style lang="scss">
+
+body
+{
+  background-color: #eee;
+}
+h1
+{
+font-size: 4.5vw;
+margin-bottom: 7vw;
+color: #269426;
+}
+.button{
+  text-align:center;
+  display:block;
+  margin:auto;
+  background-color:rgb(38, 148, 38);
+  color:white;
+  font-family: 'Fjalla One', sans-serif;
+  border:none;
+  margin-top:15px;
+}
+
 </style>
 
 <script>
