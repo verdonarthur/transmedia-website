@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <b-field :label="$t('question5.colorchoice')">
+    <b-field>
       <div class="block">
         <b-checkbox
           v-model="chckboxAnswer"

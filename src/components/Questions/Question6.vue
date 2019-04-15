@@ -1,17 +1,17 @@
 <template>
   <div class="section">
-    <b-field :label="$t('question4.colorchoice')">
+    <b-field>
       <div class="block">
         <b-checkbox
           v-model="chckboxAnswer"
-          native-value="color1"
+          native-value="img1"
           v-on:input="change"
-        >{{$t('question4.color1')}}</b-checkbox>
+        >{{$t('question6.img1')}}</b-checkbox>
         <b-checkbox
           v-model="chckboxAnswer"
-          native-value="color2"
+          native-value="img2"
           v-on:input="change"
-        >{{$t('question4.color2')}}</b-checkbox>
+        >{{$t('question6.img2')}}</b-checkbox>
       </div>
     </b-field>
     <b-field :label="$t('question4.distancechoice')">
