@@ -1,6 +1,6 @@
 <template>
   <div>
-    test : <input type="checkbox" :checked="checked" v-on:change="change">
+    <input type="number" :value="value" v-on:change="change">
   </div>
 </template>
 
@@ -8,26 +8,24 @@
 </style>
 
 <script>
+import sha1 from 'sha1'
+
 export default {
   model: {
     event: 'change'
   },
-  data() {
+  data () {
     return {
-      checked: false,
-      hash:0
-    };
+      value: 0
+    }
   },
-  mounted(){
-    this.$emit("change", this.hash)
+  mounted () {
+    this.$emit('change', sha1(this.value))
   },
   methods: {
-    change() {
-      this.hash++
-      //this.hash = "";
-      
-      this.$emit("change", this.hash);
+    change () {
+      this.$emit('change', sha1(this.value))
     }
   }
-};
+}
 </script>

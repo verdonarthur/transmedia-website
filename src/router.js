@@ -35,7 +35,11 @@ export default new Router({
       name: 'questions',
       props: true,
       component: () => import('./views/Question.vue')
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: () => import('./views/Register.vue')
     }
-
   ]
 })

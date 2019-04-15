@@ -1,8 +1,8 @@
 <template>
   <div>
-    test 2: 
-    <input type="radio" name="testRadio" value="radio1" :checked="checked" v-on:change="change">
-    <input type="radio" name="testRadio" value="radio2" v-on:change="change">
+    <input type="radio" name="testRadio" value="plank" :checked="checked" v-on:change="change">
+    <input type="radio" name="testRadio" value="lifebuoy" v-on:change="change">
+    <input type="radio" name="testRadio" value="paperboat" v-on:change="change">
   </div>
 </template>
 
@@ -10,26 +10,24 @@
 </style>
 
 <script>
+import sha1 from 'sha1'
+
 export default {
   model: {
     event: 'change'
   },
-  data() {
+  data () {
     return {
-      checked: false,
-      hash:0
-    };
+      checked: true
+    }
   },
-  mounted(){
-    this.$emit("change", this.hash)
+  mounted () {
+    this.$emit('change', sha1('plank'))
   },
   methods: {
-    change(e) {
-      this.hash = e.target.value
-      //this.hash = "";
-      
-      this.$emit("change", this.hash);
+    change (e) {
+      this.$emit('change', sha1(e.target.value))
     }
   }
-};
+}
 </script>

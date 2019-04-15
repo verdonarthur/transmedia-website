@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="section">
     <h1>Question {{this.idQuestion}}</h1>
     <div>
       <component v-bind:is="currentQuestion" v-on:change="change"></component>
@@ -12,46 +12,51 @@
 </style>
 
 <script>
-import QuizzStorage from "../utils/QuizzStorage";
+import QuizzStorage from '../utils/QuizzStorage'
 
-const NBR_QUESTION = 2;
+const NBR_QUESTION = 2
 
 // Load all the question : https://forum.vuejs.org/t/dynamically-import-components/33715
-let loadedQuestion = {};
+let loadedQuestion = {}
 for (let i = 0; i < NBR_QUESTION; i++) {
-  loadedQuestion["Question" + (i + 1)] = () => {
-    return import(`../components/Questions/Question${i + 1}.vue`);
-  };
+  loadedQuestion['Question' + (i + 1)] = () => {
+    return import(`../components/Questions/Question${i + 1}.vue`)
+  }
 }
 
 export default {
-  name: "question",
+  name: 'question',
   components: { ...loadedQuestion },
-  data() {
-    return {};
+  data () {
+    return {}
   },
-  props: ["idQuestion"],
-  mounted() {
-    this.quizzStorage = QuizzStorage.initQuizzStoage();
+  props: ['idQuestion'],
+  mounted () {
+    this.quizzStorage = QuizzStorage.initQuizzStoage()
   },
   methods: {
-    change(e) {
-      console.log(e);
-      this.quizzStorage.saveResults(this.idQuestion, e);
+    change (e) {
+      console.log(e)
+      this.quizzStorage.saveResults(this.idQuestion, e)
     },
-    nextQuestion() {
-      if (this.idQuestion < NBR_QUESTION)
+    nextQuestion () {
+      if (this.idQuestion < NBR_QUESTION) {
         this.$router.push({
-          name: "questions",
+          name: 'questions',
           params: { idQuestion: Number(this.idQuestion) + 1 }
-        });
+        })
+      } else {
+        this.$router.push({
+          name: 'register'
+        })
+      }
     }
   },
   watch: {},
   computed: {
-    currentQuestion: function() {
-      return "Question" + this.idQuestion;
+    currentQuestion: function () {
+      return 'Question' + this.idQuestion
     }
   }
-};
+}
 </script>
