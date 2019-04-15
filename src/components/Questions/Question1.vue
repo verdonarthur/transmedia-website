@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <input type="number" :value="value" v-on:change="change">
+  <div class="section">
+    <b-field :label="$t('registerPage.address')">
+        <b-input v-model="value" type="number" :value="value" maxlength="3" v-on:input="change" />
+      </b-field>
   </div>
 </template>
 

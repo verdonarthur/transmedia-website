@@ -1,8 +1,15 @@
 <template>
-  <div>
-    <input type="radio" name="testRadio" value="plank" :checked="checked" v-on:change="change">
-    <input type="radio" name="testRadio" value="lifebuoy" v-on:change="change">
-    <input type="radio" name="testRadio" value="paperboat" v-on:change="change">
+  <div class="section">
+    <div class="block">
+      <b-radio
+        v-model="radioAnswer"
+        native-value="Plank"
+        :checked="checked"
+        v-on:input="change"
+      >{{$t('question2.plank')}}</b-radio>
+      <b-radio v-model="radioAnswer" native-value="Lifebuoy" v-on:input="change">{{$t('question2.lifebuoy')}}</b-radio>
+      <b-radio v-model="radioAnswer" native-value="Paperboat" v-on:input="change">{{$t('question2.paperboat')}}</b-radio>
+    </div>
   </div>
 </template>
 
@@ -18,15 +25,16 @@ export default {
   },
   data () {
     return {
-      checked: true
+      checked: true,
+      radioAnswer: 'Plank'
     }
   },
   mounted () {
-    this.$emit('change', sha1('plank'))
+    this.$emit('change', sha1('Plank'))
   },
   methods: {
     change (e) {
-      this.$emit('change', sha1(e.target.value))
+      this.$emit('change', sha1(this.radioAnswer))
     }
   }
 }

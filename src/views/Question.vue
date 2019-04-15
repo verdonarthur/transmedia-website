@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <h1>Question {{this.idQuestion}}</h1>
+    <h1>Question {{this.idQuestion}} : {{ $t(`question${this.idQuestion}.title`) }}</h1>
     <div>
       <component v-bind:is="currentQuestion" v-on:change="change"></component>
     </div>
@@ -14,7 +14,7 @@
 <script>
 import QuizzStorage from '../utils/QuizzStorage'
 
-const NBR_QUESTION = 2
+const NBR_QUESTION = 6
 
 // Load all the question : https://forum.vuejs.org/t/dynamically-import-components/33715
 let loadedQuestion = {}
@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     change (e) {
-      console.log(e)
+      console.log('saving results:', e)
       this.quizzStorage.saveResults(this.idQuestion, e)
     },
     nextQuestion () {
