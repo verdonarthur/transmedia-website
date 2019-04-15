@@ -9,15 +9,14 @@
 </template>
 
 <style lang="scss">
-
-body
+#app, .section
 {
   background-color: #eee;
 }
 h1
 {
 font-size: 4.5vw;
-margin-bottom: 7vw;
+margin-bottom: 4vw;
 color: #269426;
 }
 .button{
