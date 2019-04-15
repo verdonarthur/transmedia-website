@@ -51,12 +51,12 @@
     },
     "lawnMower": {
       "problem": {
-        "title": "Les tondeuses-robots",
+        "title": "Les tondeuses autonomes",
         "subTitle": "Pourquoi sont-elles dangereuses pour la petite faune?",
         "mainText": "Il est très confortable de faire tondre son gazon par une tondeuse-robot, mais cette dernière ne tond pas seulement l’herbe. Elle attrape aussi tout ce qui se trouve sur son passage. Les jeunes hérissons, les petites grenouilles et les orvets sont hachés par les lames lorsqu’ils se trouvent sur le chemin de la tondeuse."
       },
       "solution": {
-        "title": "Les tondeuses-robots",
+        "title": "Les tondeuses autonomes",
         "subTitle":"Solutions aux tondeuses-robot",
         "mainText":"Les tondeuses-robots ne devraient en aucun cas fonctionner la nuit. La surface à tondre devrait aussi être contrôlée le jour pour détecter la présence d’éventuels animaux. Lorsque l’on fauche des bords de haie avec une débroussailleuse, il faut aussi vérifier au préalable qu’il n’y ait pas de hérisson ou d’autres animaux."
       }
@@ -117,7 +117,7 @@
   },
   "question3":{
     "title": "Quels sont les extérieurs, ci-dessous, les plus adaptés à la petite faune ?",
-    "img1":"",
+    "img1":"hola",
     "img2":"",
     "img3":"",
     "img4":""
