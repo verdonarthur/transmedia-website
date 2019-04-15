@@ -37,7 +37,6 @@ export default {
   },
   data () {
     return {
-      checked: true,
       chckboxAnswer: []
     }
   },
@@ -46,7 +45,7 @@ export default {
   },
   methods: {
     change (e) {
-      this.$emit('change', sha1(e.target.value))
+      this.$emit('change', sha1(this.chckboxAnswer))
     }
   }
 }

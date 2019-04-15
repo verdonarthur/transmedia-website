@@ -4,18 +4,18 @@
       <div class="block">
         <b-checkbox
           v-model="chckboxAnswer"
-          native-value="color1"
+          native-value="chimney1"
           v-on:input="change"
-        >{{$t('question6.color1')}}</b-checkbox>
+        >{{$t('question6.chimney1')}}</b-checkbox>
         <b-checkbox
           v-model="chckboxAnswer"
-          native-value="color2"
+          native-value="chimney2"
           v-on:input="change"
-        >{{$t('question6.color2')}}</b-checkbox>
+        >{{$t('question6.chimney2')}}</b-checkbox>
       </div>
     </b-field>
     <b-field :label="$t('question6.maxopening')">
-      <b-input v-model="value" type="number" :value="maxopening" maxlength="3" v-on:input="change" />
+      <b-input v-model="maxopening" type="number" :value="maxopening" maxlength="3" v-on:input="change" />
     </b-field>
   </div>
 </template>

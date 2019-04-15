@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <b-field :label="$t('question1.address')">
-        <b-input v-model="value" type="number" :value="heightClosure" maxlength="3" v-on:input="change" />
+        <b-input v-model="heightClosure" type="number" :value="heightClosure" maxlength="3" v-on:input="change" />
       </b-field>
   </div>
 </template>
