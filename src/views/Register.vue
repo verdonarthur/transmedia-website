@@ -26,7 +26,7 @@
           </b-field>
 
           <b-field :label="$t('registerPage.NPA')">
-            <b-input v-model="npa" type="number" value="1000" maxlength="4"></b-input>
+            <b-input v-model="npa" type="number" value="1000" max="9999"></b-input>
           </b-field>
         </div>
       </div>
@@ -47,6 +47,8 @@
         <b-checkbox v-model="acceptCGU">{{$t('registerPage.acceptCGU')}}</b-checkbox>
       </div>
 
+      <b-message type="is-danger" :active.sync="mustAcceptCGU" has-icon>{{$t('register.mustAcceptCGU')}}</b-message>
+
       <div class="field">
         <button class="button" @click="register">{{$t('registerPage.participate')}}</button>
       </div>
@@ -56,6 +58,8 @@
 
 <script>
 import QuizzStorage from '../utils/QuizzStorage'
+import Participant from '../utils/Participant'
+import SHA1 from 'sha1'
 
 export default {
   name: 'Register',
@@ -69,13 +73,37 @@ export default {
       npa: '',
       city: '',
       acceptCGU: false,
-      acceptNewsletter: false
+      acceptNewsletter: false,
+      mustAcceptCGU: false
     }
   },
   methods: {
     register () {
       let quizzStorage = QuizzStorage.initQuizzStoage()
-      console.log(quizzStorage)
+
+      // TODO VERIFI DATA
+
+      // user Must accept CGU !!
+      if (!this.acceptCGU) {
+        this.mustAcceptCGU = true
+        return
+      }
+
+      this.mustAcceptCGU = false
+
+      let participant = new Participant({
+        name: this.name,
+        surname: this.surname,
+        birthdate: this.birthdate,
+        street: this.street,
+        npa: this.npa,
+        email: this.email,
+        canSendNewsletter: this.acceptNewsletter,
+        hashAnswers: SHA1(quizzStorage.results),
+        answers: quizzStorage.results
+      })
+
+      participant.save()
     }
   }
 }
