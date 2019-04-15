@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <b-field :label="$t('registerPage.address')">
+    <b-field :label="$t('question1.fenceHeight')">
         <b-input v-model="value" type="number" :value="value" maxlength="3" v-on:input="change" />
       </b-field>
   </div>

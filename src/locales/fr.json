@@ -106,7 +106,8 @@
   },
 
   "question1":{
-    "title": "Tirez la clôture contre le haut à la bonne hauteur, à l’aide du curseur ci-dessous, pour laisser passer la faune."
+    "title": "Tirez la clôture contre le haut à la bonne hauteur, à l’aide du curseur ci-dessous, pour laisser passer la faune.",
+    "fenceHeight": "Hauteur de la clôture (cm)"
   },
   "question2":{
     "title": "Cliquez sur l’objet qui permettra de sauver le hérisson.",
@@ -124,6 +125,7 @@
   "question4":{
     "title": "Parmi les couleurs suivantes, choisissez celles qui sont les plus adaptées pour un autocollant de vitre.",
     "distancechoice":"Choisissez la distance maximum entre les autocollants en cm",
+    "colorchoice":"Couleurs",
     "color1":"jaune",
     "color2":"bleu",
     "color3":"noir",
@@ -141,6 +143,27 @@
   "distancechoice":"Indiquez l'ouverture minimum que le chapeau devrait avoir en mm",
   "img1":"",
   "img2":""
-  }
+  },
+  "global":
+  {
+    "nextQuestion":"Suivant"
+  },
 
+  "registerPage":
+  {
+"title":"Inscription au concours",
+"description":"Remplissez et envoyez le formulaire suivant pour participer au tirage au sort du concours.",
+"name":"Nom",
+"surname":"Prénom",
+"birthdate":"Date de naissance",
+"city":"Ville",
+"NPA":"NPA",
+"address":"Adresse",
+"email":"E-mail",
+"acceptNewsletter":"J'accepte de recevoir la newsletter",
+"acceptCGU":"J'accepte les CGU",
+"participate":"Envoyer"
+
+
+  }
 }
