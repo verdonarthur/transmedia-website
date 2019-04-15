@@ -1,7 +1,12 @@
 <template>
   <div class="section">
+<<<<<<< HEAD
+    <b-field :label="$t('question1.fenceHeight')">
+        <b-input v-model="value" type="number" :value="value" maxlength="3" v-on:input="change" />
+=======
     <b-field :label="$t('question1.address')">
         <b-input v-model="heightClosure" type="number" :value="heightClosure" maxlength="3" v-on:input="change" />
+>>>>>>> 8f81fc6b8b22b3fc79c569809d6aa1983b7438bf
       </b-field>
   </div>
 </template>
