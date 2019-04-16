@@ -1,14 +1,14 @@
 <template>
   <div>
     <div class="block" id="img-choice">
-      <input type="checkbox" name='cloture1' id="cloture1"/><label for="cloture1"></label>
-      <input type="checkbox" name='cloture2' id="cloture2"/><label for="cloture2"></label>
-      <input type="checkbox" name='cloture3' id="cloture3"/><label for="cloture3"></label>
-      <input type="checkbox" name='cloture4' id="cloture4"/><label for="cloture4"></label>
-      <b-checkbox id="test"
+      <input type="checkbox" name='cloture1' id="cloture1" v-on:input="change"/><label for="cloture1"></label>
+      <input type="checkbox" name='cloture2' id="cloture2" v-on:input="change"/><label for="cloture2"></label>
+      <input type="checkbox" name='cloture3' id="cloture3" v-on:input="change"/><label for="cloture3"></label>
+      <input type="checkbox" name='cloture4' id="cloture4" v-on:input="change"/><label for="cloture4"></label>
+      <!-- <b-checkbox id="test"
         v-model="chckboxAnswer"
         native-value="img1"
-        v-on:input="change" @click="checking()"></b-checkbox>
+        v-on:input="change" :class="{focused:isFocused}" @click.native="checking"></b-checkbox>
       <b-checkbox
         v-model="chckboxAnswer"
         native-value="img2"
@@ -23,7 +23,7 @@
         v-model="chckboxAnswer"
         native-value="img4"
         v-on:input="change"
-      >{{$t('question3.img4')}}</b-checkbox>
+      >{{$t('question3.img4')}}</b-checkbox> -->
     </div>
   </div>
 </template>
@@ -46,9 +46,11 @@ export default {
     change (e) {
       this.$emit('change', sha1(this.chckboxAnswer))
     },
-    checking (){
-      console.log("merde")
-    }
+    /* checking (){
+      console.log("blabla");
+      this.isFocused= !this.isFocused;
+      console.log(this.isFocused);
+    } */
     
   }
 }
@@ -73,7 +75,7 @@ background-size: cover;
 }
 #test.focused
 {
-  border: solid 4px rgb(38, 148, 38);
+  border-color:rgb(38, 148, 38);
 }
 
 input#cloture1[type=checkbox]+ label, input#cloture2[type=checkbox]+ label, input#cloture3[type=checkbox]+ label, input#cloture4[type=checkbox]+ label
