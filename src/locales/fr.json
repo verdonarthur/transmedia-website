@@ -94,15 +94,9 @@
     "description2": "Gagnez des prix !",
     "startButton": "C'est parti !",
     "prices": {
-<<<<<<< HEAD
       "coupon": "1 bon cadeau de 100 CHF",
       "ticket": "5 entrées au centre nature de la Sauge",
       "brochures": "5 collections de brochures"
-=======
-      "coupon": "1 bon cadeau",
-      "ticket": "1 entrée au centre nature de la Sauge",
-      "brochures": "5 collections de prospectus"
->>>>>>> 65631bbb33d5f9a240caa5571257956a2e7b8c50
     },
     "link-to-register": "Inscrivez-vous"
   },
