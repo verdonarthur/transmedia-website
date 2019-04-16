@@ -40,6 +40,8 @@
 @import "~normalize.css/normalize.css";
 @import "~bulma/sass/utilities/_all";
 
+$primary:rgb(38, 148, 38);
+$primary-invert:findColorInvert($primary);
 $success: rgb(38, 148, 38);
 $success-invert: findColorInvert($success);
 

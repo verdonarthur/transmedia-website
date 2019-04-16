@@ -6,13 +6,20 @@
         <input type="checkbox" name='chimney2' id="chimney2" v-on:input="change"/><label for="chimney2"></label>
       </div>
     </b-field>
-    <b-field :label="$t('question6.maxopening')">
-      <b-input v-model="maxopening" type="number" :value="maxopening" maxlength="3" v-on:input="change" />
+    <b-field :label="$t('question6.maxopening')" id="openingChimney">
+      <input ref="sliderBulma" v-model="value" class="slider is-fullwidth is-large is-circle" step="5" min="0" max="50" type="range" v-on:input="change" >
+        <p>{{value}} cm</p>
     </b-field>
   </div>
 </template>
 
 <style lang="scss">
+@import "~bulma-slider/dist/css/bulma-slider.min.css";
+
+#openingChimney
+{
+  display: block;
+}
 input#chimney1[type=checkbox], input#chimney2[type=checkbox]
  {
     display:none;
@@ -44,6 +51,7 @@ border: solid 4px rgb(38, 148, 38);
 
 <script>
 import sha1 from 'sha1'
+import BulmaSlider from 'bulma-slider/dist/js/bulma-slider.min.js'
 
 export default {
   model: {
@@ -52,7 +60,8 @@ export default {
   data () {
     return {
       maxopening: 0,
-      chckboxAnswer: []
+      chckboxAnswer: [],
+      value:0
     }
   },
   mounted () {

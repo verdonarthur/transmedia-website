@@ -2,18 +2,19 @@
   <div class="quizz">
     <img src="../assets/logo-birdlife.png" alt="BirdLife logo" class="logo">
     <h1>{{ $t("quizzPage.title") }}</h1>
-    <p class="sous-titre">{{$t("quizzPage.sous-titre")}}</p>
+    <h2 class="sous-titre">{{$t("quizzPage.sous-titre")}}</h2>
+  <div class="prices">
     <p class="description">{{$t("quizzPage.description")}}</p>
     <h2 class>{{$t("quizzPage.description2")}}</h2>
     <div class="columns is-vcentered is-mobile">
       <div class="column">
-        <img src="../assets/setBrochure.png">
+        <img src="../assets/quizz/set-brochures.png">
       </div>
       <div class="column">
-        <img src="../assets/tickets.png">
+        <img src="../assets/quizz/lasauge.jpg">
       </div>
       <div class="column">
-        <img src="../assets/bonAchat.png">
+        <img src="../assets/quizz/bon_100CHF.png">
       </div>
     </div>
     <div class="columns is-mobile">
@@ -21,7 +22,11 @@
       <div class="column">{{$t("quizzPage.prices.ticket")}}</div>
       <div class="column">{{$t("quizzPage.prices.coupon")}}</div>
     </div>
-    <router-link to="quizz/question/1">{{$t("quizzPage.startButton")}}</router-link>
+    </div>
+    <router-link to="quizz/question/1">
+    <button class="button is-success">{{$t("quizzPage.startButton")}}</button>
+    </router-link>
+    
   </div>
 </template>
 
@@ -48,6 +53,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.button{
+  color:white;
+  font-family: 'Fjalla One', sans-serif;
+  border:none;
+  margin-top:15px;
+}
+
 .quizz {
   background-color: #eee;
   height: 100%;
@@ -57,26 +69,20 @@ export default {
 }
 
 h1 {
-  font-size: 7vw;
-  line-height: 9vw;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-size: 6vw;
+  line-height: 8vw;
   color: #555;
 }
 
-p {
+.description {
   font-family: "Roboto", sans-serif;
   font-size: 2.25vh;
+  text-align: left;
+  margin-bottom:7vw;
 }
 
 .sous-titre {
-  font-size: 7vw;
-  margin: 0 0 3vh 0;
-}
-
-.description {
-  text-align: left;
-  color: #006eab;
+  font-size: 5vw;
 }
 
 .logo {
@@ -85,8 +91,16 @@ p {
 }
 
 h2 {
-  margin-top: 4vh;
-  font-weight: bold;
-  font-size: 5vw;
+  color: rgb(38, 148, 38);
+  margin: 0 0 4vw 0;
+}
+
+.prices
+{
+  padding:1vw 7vw 7vw 7vw;
+}
+.column
+{
+ padding:0 2vw 1vw 2vw;
 }
 </style>

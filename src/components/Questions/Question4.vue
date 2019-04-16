@@ -24,25 +24,19 @@
         >{{$t('question4.color4')}}</b-checkbox>
       </div>
     </b-field>
-    <b-field :label="$t('question4.distancechoice')">
-      <b-select expanded v-model="slctAnswer" v-on:input="change">
-        <option value="0">0</option>
-        <option value="2">2</option>
-        <option value="5">5</option>
-        <option value="10">10</option>
-        <option value="15">15</option>
-        <option value="20">20</option>
-        <option value="30">30</option>
-        <option value="50">50</option>
-        <option value="75">75</option>
-        <option value="100">100</option>
-        <option value="150">150</option>
-      </b-select>
+    <b-field :label="$t('question4.distancechoice')" id="distanceSticker">
+      <input ref="sliderBulma" v-model="value" class="slider is-fullwidth is-large is-circle" step="5" min="0" max="100" type="range" v-on:input="change" >
+        <p>{{value}} cm</p>
     </b-field>
   </div>
 </template>
 
 <style lang="scss">
+@import "~bulma-slider/dist/css/bulma-slider.min.css";
+#distanceSticker
+{
+  display: block;
+}
 #colors .check
 {
   width:15vw;
@@ -75,6 +69,7 @@
 
 <script>
 import sha1 from 'sha1'
+import BulmaSlider from 'bulma-slider/dist/js/bulma-slider.min.js'
 
 export default {
   model: {
@@ -83,7 +78,8 @@ export default {
   data () {
     return {
       slctAnswer: 0,
-      chckboxAnswer: []
+      chckboxAnswer: [],
+      value:0
     }
   },
   mounted () {

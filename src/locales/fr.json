@@ -94,9 +94,9 @@
     "description2": "Gagnez des prix !",
     "startButton" : "C'est parti !",
     "prices": {
-      "coupon":"1 bon cadeau",
-      "ticket":"1 entrée au centre nature de la Sauge",
-      "brochures":"5 collections de prospectus"
+      "coupon":"1 bon cadeau de 100 CHF",
+      "ticket":"5 entrées au centre nature de la Sauge",
+      "brochures":"5 collections de brochures"
     },
     "link-to-register": "Inscrivez-vous"
   },
@@ -133,7 +133,7 @@
   },
   "question5":{
     "title": "Quels éléments de la photo sont des pièges pour la faune ?",
-    "choice1":"la clôture",
+    "choice1":"La clôture",
     "choice2":"Le pot avec le buisson",
     "choice3":"La tondeuse autonome fonctionnant de nuit",
     "choice4":"Le voisinage dense"
@@ -164,7 +164,16 @@
 "acceptNewsletter":"J'accepte de recevoir la newsletter",
 "acceptCGU":"J'accepte les CGU",
 "participate":"Envoyer"
-
+  },
+  "register":{
+    "mustAcceptCGU":"Vous devez accepter ",
+    "goHome":""
+  },
+  "backend":{
+"helloAdmin":"",    
+"username":"",
+"password":"",
+"exportCSV":""
 
   }
 }
