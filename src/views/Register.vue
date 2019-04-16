@@ -72,7 +72,7 @@
 
 <script>
 import QuizzStorage from '../utils/QuizzStorage'
-import Participant from '../utils/Participant'
+import Participant from '../utils/Backend'
 import SHA1 from 'sha1'
 
 export default {
