@@ -159,7 +159,8 @@
   },
   "register": {
     "mustAcceptCGU": "Vous devez accepter ",
-    "goHome": ""
+    "goHome": "Revenir à l'accueil",
+    "confirm":"Merci pour votre participation"
   },
   "backend": {
     "helloAdmin": "Bienvenue !",
