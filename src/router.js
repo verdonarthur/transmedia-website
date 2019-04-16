@@ -8,6 +8,7 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
+    // --------- Website --------
     {
       path: '/',
       name: 'home',
@@ -18,24 +19,20 @@ export default new Router({
       name: 'pieges',
       component: () => import('./views/Traps.vue')
     },
-    {
-      path: '/register',
-      name: 'register',
-      component: () => import('./views/Register.vue')
-    },
     // --------- QUIZZ --------
     {
       path: '/quizz',
       name: 'quizz',
       component: () => import('./views/Quizz.vue')
     },
-    // --------- QUESTION --------,
+    // --------- QUESTION --------
     {
       path: '/quizz/question/:idQuestion',
       name: 'questions',
       props: true,
       component: () => import('./views/Question.vue')
     },
+    // --------- REGISTER --------
     {
       path: '/register',
       name: 'register',
@@ -44,6 +41,17 @@ export default new Router({
       path: '/registerConfirm',
       name: 'registerConfirm',
       component: () => import('./views/RegisterConfirm.vue')
+    },
+    // --------- ADMIN PANEL --------
+    {
+      path: '/admin/login',
+      name: 'login',
+      component: () => import('./views/Backend/Login.vue')
+    },
+    {
+      path: '/admin/home',
+      name: 'adminHome',
+      component: () => import('./views/Backend/Home.vue')
     }
   ]
 })
