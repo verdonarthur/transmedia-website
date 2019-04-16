@@ -60,7 +60,7 @@ input#cloture1[type=checkbox], input#cloture2[type=checkbox], input#cloture3[typ
     display:none;
 }
 
-#test input[type=checkbox], span.check 
+#test input[type=checkbox], #test span.check 
 {
  display:none;
 }

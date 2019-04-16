@@ -38,11 +38,21 @@
 }
 
 @import "~normalize.css/normalize.css";
+@import "~bulma/sass/utilities/_all";
 
-$primary: rgb(38, 148, 38);
+$success: rgb(38, 148, 38);
+$success-invert: findColorInvert($success);
 
 $colors: (
-    "primary": ($primary),
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
 );
 
 html,
@@ -62,5 +72,6 @@ h3,
 button {
   font-family: "Fjalla One", sans-serif;
 }
-
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div>
     <b-field :label="$t('question4.colorchoice')">
       <div class="block" id="colors">
         <b-checkbox id="yellow" type="is-warning"
@@ -25,7 +25,7 @@
       </div>
     </b-field>
     <b-field :label="$t('question4.distancechoice')">
-      <b-select expanded v-model="slctAnswer" v-on:input="change" class="is-primary">
+      <b-select expanded v-model="slctAnswer" v-on:input="change">
         <option value="0">0</option>
         <option value="2">2</option>
         <option value="5">5</option>

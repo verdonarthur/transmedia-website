@@ -1,7 +1,8 @@
 <template>
-  <div class="section">
+  <div>
+    <img src="../../assets/quizz/jardin_nuit.jpg" alt="jardin de nuit">
     <b-field>
-      <div class="block">
+      <div class="block" id="garden">
         <b-checkbox
           v-model="chckboxAnswer"
           native-value="choice1"
@@ -28,6 +29,11 @@
 </template>
 
 <style lang="scss">
+#garden .checkbox
+{
+  display: flex;
+  margin: 5vw;
+}
 </style>
 
 <script>
