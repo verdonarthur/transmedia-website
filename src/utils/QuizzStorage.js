@@ -6,7 +6,7 @@ export default class QuizzStorage {
   }
 
   saveResults (idQuestion, result) {
-    this.results[idQuestion] = result
+    this.results[idQuestion] = { idQuestion: idQuestion, hashAnswer: result }
     this.save()
   }
 

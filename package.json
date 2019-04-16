@@ -9,6 +9,7 @@
     "eslint": "node_modules\\.bin\\eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "buefy": "^0.7.3",
     "core-js": "^2.6.5",
     "node-sass": "^4.11.0",

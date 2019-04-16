@@ -40,6 +40,10 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: () => import('./views/Register.vue')
+    }, {
+      path: '/registerConfirm',
+      name: 'registerConfirm',
+      component: () => import('./views/RegisterConfirm.vue')
     }
   ]
 })
