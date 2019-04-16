@@ -1,4 +1,7 @@
-const URL_API = 'https://intense-forest-96813.herokuapp.com/api/v1/'
+import axios from 'axios'
+
+// const URL_API = 'http://localhost:8000/api/v1/'
+const URL_API = 'http://intense-forest-96813.herokuapp.com/api/v1/'
 
 export default class Participant {
   constructor (participant) {
@@ -15,9 +18,8 @@ export default class Participant {
 
   save () {
     console.log('------- PARTICIPANT OBJECT --------\n', this)
+    console.log(JSON.stringify(this))
 
-    fetch(URL_API + '/participant/', { method: 'POST', body: this })
-      .then(data => { console.log(data) })
-      .catch(err => console.log(err))
+    return axios.post(URL_API + 'participant', this)
   }
 }
