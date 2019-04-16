@@ -7,7 +7,8 @@
 </template>
 <script>
 </script>
-<style>
+<style lang="scss">
+
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
 .slide-enter-active {
@@ -38,6 +39,12 @@
 
 @import "~normalize.css/normalize.css";
 
+$primary: rgb(38, 148, 38);
+
+$colors: (
+    "primary": ($primary),
+);
+
 html,
 body,
 #app {
@@ -55,4 +62,5 @@ h3,
 button {
   font-family: "Fjalla One", sans-serif;
 }
+
 </style>
