@@ -60,24 +60,6 @@ input#cloture1[type=checkbox], input#cloture2[type=checkbox], input#cloture3[typ
     display:none;
 }
 
-#test input[type=checkbox], #test span.check 
-{
- display:none;
-}
-#test
-{
-  background-image: url("../../assets/quizz/mur1.jpg");
-background-size: cover;
-    border: solid 4px #eee;
-    width: 40vw;
-    height:60vw; 
-    display:inline-block;
-}
-#test.focused
-{
-  border-color:rgb(38, 148, 38);
-}
-
 input#cloture1[type=checkbox]+ label, input#cloture2[type=checkbox]+ label, input#cloture3[type=checkbox]+ label, input#cloture4[type=checkbox]+ label
 {
     background-size: cover;

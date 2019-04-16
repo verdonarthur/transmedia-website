@@ -140,7 +140,8 @@
   },
   "question6":{
     "title": "Sélectionnez le style de cheminée qui empêche les oiseaux de tomber à l’intérieur.",
-  "distancechoice":"Indiquez l'ouverture minimum que le chapeau devrait avoir en mm",
+  "maxopening":"Indiquez l'ouverture maximum que le chapeau devrait avoir en mm",
+  "chimneychoice": "Les cheminées",
   "chimney1":"",
   "chimney2":""
   },

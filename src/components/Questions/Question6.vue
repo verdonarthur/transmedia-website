@@ -1,17 +1,9 @@
 <template>
-  <div class="section">
-    <b-field :label="$t('question6.colorchoice')">
+  <div>
+    <b-field :label="$t('question6.chimneychoice')">
       <div class="block">
-        <b-checkbox
-          v-model="chckboxAnswer"
-          native-value="chimney1"
-          v-on:input="change"
-        >{{$t('question6.chimney1')}}</b-checkbox>
-        <b-checkbox
-          v-model="chckboxAnswer"
-          native-value="chimney2"
-          v-on:input="change"
-        >{{$t('question6.chimney2')}}</b-checkbox>
+        <input type="checkbox" name='chimney1' id="chimney1" v-on:input="change"/><label for="chimney1"></label>
+        <input type="checkbox" name='chimney2' id="chimney2" v-on:input="change"/><label for="chimney2"></label>
       </div>
     </b-field>
     <b-field :label="$t('question6.maxopening')">
@@ -21,6 +13,33 @@
 </template>
 
 <style lang="scss">
+input#chimney1[type=checkbox], input#chimney2[type=checkbox]
+ {
+    display:none;
+}
+
+input#chimney1[type=checkbox]+ label, input#chimney2[type=checkbox]+ label
+{
+    background-size: cover;
+    border: solid 4px #eee;
+    width: 42vw;
+    height:42vw; 
+    display:inline-block;
+}
+input#chimney1[type=checkbox]+ label
+{
+  background-image: url("../../assets/quizz/chimney2.jpg");
+}
+
+input#chimney2[type=checkbox]+ label
+{
+  background-image: url("../../assets/quizz/chimney1.jpg");
+}
+
+input#chimney1[type=checkbox]:checked + label, input#chimney2[type=checkbox]:checked + label
+{
+border: solid 4px rgb(38, 148, 38);
+}
 </style>
 
 <script>
