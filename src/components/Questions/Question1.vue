@@ -1,17 +1,34 @@
 <template>
-  <div class="section">
-<<<<<<< HEAD
+  <div>
+    <div id="fence">
+        <img id="lawn" src="../../assets/quizz/cloture_base.png" alt="Herbe">
+        <img id="cloture" src="../../assets/quizz/cloture_move.png" alt="Clôture à bouger en hauteur">
+      </div>
     <b-field :label="$t('question1.fenceHeight')">
         <b-input v-model="value" type="number" :value="value" maxlength="3" v-on:input="change" />
-=======
-    <b-field :label="$t('question1.address')">
-        <b-input v-model="heightClosure" type="number" :value="heightClosure" maxlength="3" v-on:input="change" />
->>>>>>> 8f81fc6b8b22b3fc79c569809d6aa1983b7438bf
       </b-field>
   </div>
 </template>
 
 <style lang="scss">
+.field
+{
+  margin-top:4vw;
+}
+#lawn
+{
+  margin-top:45vw;
+  position:relative;
+  z-index:1;
+}
+#cloture
+{
+  padding:0 1.5rem;
+  position: absolute;
+  z-index:0;
+  left:0;
+}
+
 </style>
 
 <script>
@@ -35,4 +52,5 @@ export default {
     }
   }
 }
+
 </script>
