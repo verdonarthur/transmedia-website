@@ -17,7 +17,7 @@
         </div>
 
         <b-field :label="$t('registerPage.birthdate')">
-          <b-input v-model="birthdate" type="date" value="20/01/1990" required></b-input>
+          <b-datepicker v-model="birthdate" icon="calendar" required></b-datepicker>
         </b-field>
 
         <div class="field is-horizontal">
@@ -32,12 +32,12 @@
           </div>
         </div>
 
-        <b-field :label="$t('registerPage.email')">
-          <b-input v-model="email" type="email" value="john@example.ch" maxlength="30" required></b-input>
-        </b-field>
-
         <b-field :label="$t('registerPage.address')">
           <b-input v-model="street" type="text" value="ch. de l'oiseau 3" maxlength="50" required></b-input>
+        </b-field>
+
+        <b-field :label="$t('registerPage.email')">
+          <b-input v-model="email" type="email" value="john@example.ch" maxlength="30" required></b-input>
         </b-field>
 
         <div class="field">
@@ -60,8 +60,6 @@
           has-icon
         >{{$t('register.unknownError')}}</b-message>
 
-        <b-loading :is-full-page="true" :active.sync="isLoading" :can-cancel="true"></b-loading>
-
         <div class="field">
           <button class="button" >{{$t('registerPage.participate')}}</button>
         </div>
@@ -82,20 +80,19 @@ export default {
       name: '',
       surname: '',
       email: '',
-      birthdate: '',
+      birthdate: new Date(),
       street: '',
       npa: '',
       city: '',
       acceptCGU: false,
       acceptNewsletter: false,
       mustAcceptCGU: false,
-      unknownError: false,
-      isLoading: false
+      unknownError: false
     }
   },
   methods: {
     register () {
-      this.isLoading = true
+      const loadComp = this.$loading.open()
 
       let quizzStorage = QuizzStorage.initQuizzStoage()
 
@@ -104,7 +101,7 @@ export default {
       // user Must accept CGU !!
       if (!this.acceptCGU) {
         this.mustAcceptCGU = true
-        this.isLoading = false
+        loadComp.close()
         return
       }
 
@@ -114,7 +111,7 @@ export default {
       let participant = new Participant({
         name: this.name,
         surname: this.surname,
-        birthdate: this.birthdate,
+        birthdate: this.birthdate.toISOString().slice(0, 10), // https://stackoverflow.com/questions/3552461/how-to-format-a-javascript-date
         street: this.street,
         npa: this.npa,
         email: this.email,
@@ -124,16 +121,13 @@ export default {
       })
 
       participant.save().then(res => {
-        this.isLoading = false
-        // BAD REQUEST
-        if (res.status === 400) {
-          res.json().then(err => console.log(err))
-          this.unknownError = true
-        } else {
-          this.$router.push({
-            name: 'register'
-          })
-        }
+        loadComp.close()
+        this.$router.push({
+          name: 'registerConfirm'
+        })
+      }).catch(() => {
+        loadComp.close()
+        this.unknownError = true
       })
     }
   }

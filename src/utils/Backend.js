@@ -53,6 +53,7 @@ export class User {
             resolve(res.data.token)
           }
         })
+        .catch(() => reject(new Error('bad request')))
     })
   }
 }
@@ -83,8 +84,6 @@ export default class Participant {
 
   save () {
     console.log('------- PARTICIPANT OBJECT --------\n', this)
-    console.log(JSON.stringify(this))
-
     return axios.post(URL_API + 'participant', this)
   }
 }

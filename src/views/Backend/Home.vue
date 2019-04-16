@@ -15,6 +15,7 @@
         :striped="true"
         :narrowed="true"
         :hoverable="true"
+        :loading="isLoading"
         :paginated="true"
         :per-page="perPage"
         :current-page.sync="current"
@@ -31,12 +32,14 @@ export default {
   data () {
     return {
       participants: [],
+      isLoading: true,
       current: 1,
       perPage: 20,
       dataURL: '',
       columns: [
         {
           field: 'name',
+          sortable: true,
           label: this.$t('backend.fieldName')
         },
         {
@@ -45,7 +48,8 @@ export default {
         },
         {
           field: 'birthdate',
-          label: this.$t('backend.fieldBirthdate')
+          label: this.$t('backend.fieldBirthdate'),
+          centered: true
         },
         {
           field: 'street',
@@ -61,7 +65,9 @@ export default {
         },
         {
           field: 'canSendNewsletter',
-          label: this.$t('backend.fieldCanSendNewsltetter')
+          sortable: true,
+          label: this.$t('backend.fieldCanSendNewsltetter'),
+          centered: true
         }
       ]
     }
@@ -73,6 +79,7 @@ export default {
 
     Participant.getAll().then(data => {
       this.participants = JSON.parse(data)
+      this.isLoading = false
 
       // Create download link
       let fileData = new Blob([convertToCSV(this.participants)], { type: 'data:text/csv;charset=utf-8;' })

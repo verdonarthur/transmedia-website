@@ -3,6 +3,7 @@
     <form class="box" @submit.prevent="login">
       <b-message
         :active.sync="hasError"
+        type="is-danger"
       >{{$t('backend.loginError')}}</b-message>
       <b-field :label="$t('backend.username')">
         <b-input placeholder="johnsilver" maxlength="30" v-model="username"></b-input>
@@ -35,14 +36,14 @@ export default {
       const loadComp = this.$loading.open()
 
       let user = new User(this.username, this.password)
+
       user
         .login()
         .then(token => {
           loadComp.close()
           this.$router.push({ name: 'adminHome' })
         })
-        .catch(err => {
-          console.log(err)
+        .catch(() => {
           loadComp.close()
           this.hasError = true
         })
