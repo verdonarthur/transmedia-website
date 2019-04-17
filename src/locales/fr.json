@@ -7,7 +7,7 @@
   },
   "trapsPage": {
     "title": "C'est parti !",
-    "description": "Cliquez sur les pièges mis en évidence pour plus d’informations à leur sujet.",
+    "description": "Cliquez sur les pièges mis en évidence pour plus d’informations à leur sujet, puis participez à notre quiz-concours sur les pièges !",
     "allTrapsFound": "Avez-vous trouvé tous les pièges autour de la maison ?",
     "goQuizz": "Participez à notre concours !",
     "link-to-quizz": "Je participe au concours"
@@ -25,18 +25,6 @@
         "mainText": "Les chapeaux de cheminée permettent d’éviter que les oiseaux tombent dans l'ouvrage. Ils ne doivent pas avoir d’ouverture excédant 25 mm. Un grillage ou un chapeau de cheminée installé par un spécialiste empêche le colmatage par nidification et ainsi une intoxication à la fumée. On peut offrir aux oiseaux un site de nidification alternatif en installant des nichoirs adaptés sur la maison ou un arbre à proximité. Les gouttières peuvent être fermées avec des grilles. Les feuilles mortes doivent être régulièrement évacuées."
       }
     },
-    "homeHoles": {
-      "problem": {
-        "title": "Les ouvertures de la maison",
-        "subTitle": "Pourquoi sont-elles importantes ?",
-        "mainText": "Les vieilles maisons comprennent de nombreuses ouvertures qui permettent à diverses espèces animales d’utiliser la cave, la façade ou le toit comme abri. L’entretoit, les avant-toits, les combles, les caissons de stores, les plaques de protection, les poutres apparentes sont autant d’endroits de nidification ou d’abri pour différents animaux. Lors de rénovations, de nettoyages de la maison, voire de nouvelles constructions, les accès et sites de nidification susmentionnés sont parfois ignorés et/ou détruits. Une destruction des nids ou une entrave à l’élevage des jeunes sont interdites par la loi."
-      },
-      "solution": {
-        "title": "Les ouvertures de la maison",
-        "subTitle": "Solutions pour conserver les ouvertures de la maison",
-        "mainText": "Lors de rénovations, il est important de conserver les lieux de vie des chauves-souris et des oiseaux, ainsi que les accès. Les travaux ne doivent pas être effectués pendant la période d’élevage des jeunes, c’est-à-dire d’avril à août. Les produits d’entretien du bois, les vernis, les peintures et les crépis devraient être biocompatibles. Lorsque les accès ou sites de nidification sont fermés en dehors de la période de reproduction, des habitats de remplacement accessibles doivent être créés ailleurs. Des nichoirs peuvent représenter une alternative."
-      }
-    },
     "windows": {
       "problem": {
         "title": "Les vitres",
@@ -51,14 +39,14 @@
     },
     "lawnMower": {
       "problem": {
-        "title": "Les tondeuses autonomes",
-        "subTitle": "Pourquoi sont-elles dangereuses pour la petite faune?",
-        "mainText": "Il est très confortable de faire tondre son gazon par une tondeuse-robot, mais cette dernière ne tond pas seulement l’herbe. Elle attrape aussi tout ce qui se trouve sur son passage. Les jeunes hérissons, les petites grenouilles et les orvets sont hachés par les lames lorsqu’ils se trouvent sur le chemin de la tondeuse."
+        "title": "Les robots tondeuses",
+        "subTitle": "Pourquoi sont-ils dangereux pour la petite faune?",
+        "mainText": "Il est très confortable de faire tondre son gazon par un robot tondeuse, mais cet dernier ne tond pas seulement l’herbe. Elle attrape aussi tout ce qui se trouve sur son passage. Les jeunes hérissons, les petites grenouilles et les orvets sont hachés par les lames lorsqu’ils se trouvent sur le chemin de la tondeuse."
       },
       "solution": {
-        "title": "Les tondeuses autonomes",
-        "subTitle": "Solutions aux tondeuses-robot",
-        "mainText": "Les tondeuses-robots ne devraient en aucun cas fonctionner la nuit. La surface à tondre devrait aussi être contrôlée le jour pour détecter la présence d’éventuels animaux. Lorsque l’on fauche des bords de haie avec une débroussailleuse, il faut aussi vérifier au préalable qu’il n’y ait pas de hérisson ou d’autres animaux."
+        "title": "Les robots tondeuses",
+        "subTitle": "Solutions aux robots tondeuses",
+        "mainText": "Les robots tondeuses ne devraient en aucun cas fonctionner la nuit. La surface à tondre devrait aussi être contrôlée le jour pour détecter la présence d’éventuels animaux. Lorsque l’on fauche des bords de haie avec une débroussailleuse, il faut aussi vérifier au préalable qu’il n’y ait pas de hérisson ou d’autres animaux."
       }
     },
     "pool": {
@@ -101,7 +89,7 @@
     "link-to-register": "Inscrivez-vous"
   },
   "question1": {
-    "title": "Tirez la clôture contre le haut à la bonne hauteur, à l’aide du curseur ci-dessous, pour laisser passer la faune.",
+    "title": "Sélectionnez la bonne hauteur pour les clôtures.",
     "fenceHeight": "Hauteur de la clôture (cm)"
   },
   "question2": {
@@ -111,15 +99,11 @@
     "paperboat": "Bateau en papier"
   },
   "question3": {
-    "title": "Quels sont les extérieurs, ci-dessous, les plus adaptés à la petite faune ?",
-    "img1": "hola",
-    "img2": "",
-    "img3": "",
-    "img4": ""
+    "title": "Quels sont les extérieurs, ci-dessous, les plus adaptés à la petite faune ?"
   },
   "question4": {
-    "title": "Parmi les couleurs suivantes, choisissez celles qui sont les plus adaptées pour un autocollant de vitre.",
-    "distancechoice": "Choisissez la distance maximum entre les autocollants en cm",
+    "title": "Choisissez les couleurs qui sont les plus adaptées pour les autocollants de vitre, et la distance maximum qui devrait être laissée entre eux.",
+    "distancechoice": "Distance entre les autocollants en cm",
     "colorchoice": "Couleurs",
     "color1": "jaune",
     "color2": "bleu",
@@ -131,10 +115,10 @@
     "choice1": "La clôture",
     "choice2": "Le pot avec le buisson",
     "choice3": "La tondeuse autonome fonctionnant de nuit",
-    "choice4": "Le voisinage dense"
+    "choice4": "La densité du voisinage"
   },
   "question6": {
-    "title": "Sélectionnez le style de cheminée qui empêche les oiseaux de tomber à l’intérieur.",
+    "title": "Sélectionnez le ou les style(s) de cheminée qui empêche(nt) les oiseaux de tomber à l’intérieur.",
     "maxopening": "Indiquez l'ouverture maximum que le chapeau devrait avoir en mm",
     "chimneychoice": "Les cheminées",
     "chimney1": "",

@@ -10,8 +10,8 @@
     </div>
     <section class="pieges">
       <div class="header">
-        <h1>{{ $t("trapsPage.title") }}</h1>
-        <p class="cliquez">{{$t("trapsPage.description")}}</p>
+        <h1 class="title is-3">{{ $t("trapsPage.title") }}</h1>
+        <p class="cliquez subtitle is-6">{{$t("trapsPage.description")}}</p>
       </div>
       <div id="cheminee_bloc" class="cliquable">
         <img src="../assets/cheminee.png" @click="openPopUp('chimney')" alt="cheminee cliquable">
@@ -112,7 +112,7 @@ export default {
 .header {
   padding: 20vmin 0;
   background-color: rgba(255, 255, 255, 0.8);
-  height: 70vmin;
+  height: 250px;
 }
 .pieges {
   background-image: url("../assets/fond_website-compressed.jpg");
@@ -123,19 +123,16 @@ export default {
 }
 
 h1 {
-  font-size: 8.5vmin;
-  font-weight: bold;
   color: rgb(38, 148, 38);
-  padding: 0 20vmin;
+  padding: 0 15vw;
 }
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 5vmin;
+  font-size: 5vw;
 }
 .cliquez {
-  font-style: italic;
   color: #555;
-  padding: 0 20vmin;
+  padding: 0 15vw;
   line-height: 1.3em;
 }
 
@@ -146,13 +143,12 @@ p {
   width: 100%;
   position: absolute;
   animation: appear 1s forwards;
-  animation-delay: 0.9s;
 }
 
 .cliquable img {
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
-  animation-delay: 2s;
+  animation-delay: 0.5s;
 }
 
 /*----------------CHEMINEE-----------------------*/

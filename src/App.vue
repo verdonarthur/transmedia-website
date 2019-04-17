@@ -9,9 +9,9 @@
 </script>
 <style lang="scss">
 
-/* Enter and leave animations can use different */
+/* /* Enter and leave animations can use different */
 /* durations and timing functions.              */
-.slide-enter-active {
+/* .slide-enter-active {
   transition-duration: 1.3s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
@@ -30,13 +30,13 @@
 .slide-leave {
   max-height: 100%;
   overflow: hidden;
-}
+} */
 /* Cacher les éléments cliquables sur la page des pièges avant de faire les transitions vers les autres pages*/
-.slide-enter,
+/* .slide-enter,
 .slide-leave-to {
   overflow: hidden;
   max-height: 0;
-}
+} */ 
 
 @import "~normalize.css/normalize.css";
 @import "~bulma/sass/utilities/_all";
@@ -73,7 +73,9 @@ p {
 h1,
 h2,
 h3,
-button {
+button,
+h1.title, h2.title, h2.subtitle {
+  font-weight: normal;
   font-family: "Fjalla One", sans-serif;
 }
 @import "~bulma";

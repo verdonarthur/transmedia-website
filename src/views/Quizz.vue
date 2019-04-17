@@ -1,5 +1,5 @@
 <template>
-  <div class="quizz">
+  <div class="section quizz">
     <div class="linkToHome">
       <router-link to="/pieges">
         <i class="fas fa-arrow-left"></i>
@@ -73,7 +73,7 @@ export default {
   font-family: 'Fjalla One', sans-serif;
   border:none;
   margin-top:15px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .quizz {
