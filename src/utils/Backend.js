@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // const URL_API = 'http://localhost:8000/api/v1/'
-const URL_API = 'http://intense-forest-96813.herokuapp.com/api/v1/'
+const URL_API = 'https://intense-forest-96813.herokuapp.com/api/v1/'
 const STORAGE_USER = 'STORAGE_USER'
 
 /**
