@@ -20,9 +20,7 @@ export default {
     handleScroll () {
       if((window.scrollY + window.innerHeight )>= document.getElementById('home').offsetHeight)
       {
-        window.scrollTo(0,0);
-        this.$router.push('/pieges')}
-        
+      this.$router.push('/pieges')}
     }
   },
   mounted () {
@@ -76,5 +74,21 @@ i {
   margin-top: 5vh;
   font-size: 8vh;
   color: #555;
+}
+/*-----PC-----*/
+@media screen and (min-width: 769px) {
+h1 {
+  font-size: 5vw;
+  line-height: 9vw;}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.0vw;
+  padding: 0 12vw;
+}
+.sous-titre {
+  font-size: 4vw;
+  margin: 0 0 3vh 0;
+}
 }
 </style>
