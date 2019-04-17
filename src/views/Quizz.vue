@@ -1,5 +1,5 @@
 <template>
-  <div class="quizz">
+  <div class="section quizz">
     <div class="linkToHome">
       <router-link to="/pieges">
         <i class="fas fa-arrow-left"></i>

@@ -2,7 +2,7 @@
   <div>
     <div class="section">
       <div class="box">
-    <h1 class="title is-4">Question {{this.idQuestion}} : {{ $t(`question${this.idQuestion}.title`) }}</h1>
+    <h1 class="title is-5">Question {{this.idQuestion}} : {{ $t(`question${this.idQuestion}.title`) }}</h1>
     <div>
       <component v-bind:is="currentQuestion" v-on:change="change"></component>
     </div>
