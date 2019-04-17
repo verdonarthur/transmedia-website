@@ -21,7 +21,8 @@
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
 .slide-leave-active .cliquable,
-.slide-leave-active .stylePC {
+.slide-leave-active .stylePC,
+ {
   visibility: hidden;
 }
 

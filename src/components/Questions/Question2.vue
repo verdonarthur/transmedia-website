@@ -35,7 +35,7 @@
 }
 #answers .b-radio .control-label
 {
-  padding: 10px 30px;
+  padding: 10px 10px;
 }
 #bouee, #bateau
 {
@@ -47,6 +47,7 @@
   margin-right:5vw;
   width:45px;
 }
+
 
 #herisson
 {

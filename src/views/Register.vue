@@ -1,5 +1,6 @@
 <template>
-  <div class="register section">
+  <div class="register">
+    <div class="section">
     <form class="box" @submit.prevent="register">
       <h1>{{ $t("registerPage.title") }}</h1>
       <p>{{$t("registerPage.description")}}</p>
@@ -65,6 +66,7 @@
         </div>
       </section>
     </form>
+    </div>
   </div>
 </template>
 

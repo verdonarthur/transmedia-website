@@ -6,7 +6,7 @@
       </router-link>
     </div>
     <img src="../assets/logo-birdlife.png" alt="BirdLife logo" class="logo">
-    <h1 class="title is-3">{{ $t("quizzPage.title") }}</h1>
+    <h1 class="title is-4">{{ $t("quizzPage.title") }}</h1>
     <h2 class="sous-titre subtitle is-4">{{$t("quizzPage.sous-titre")}}</h2>
   <div class="prices">
     <p class="description">{{$t("quizzPage.description")}}</p>

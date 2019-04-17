@@ -29,8 +29,8 @@ input#chimney1[type=checkbox]+ label, input#chimney2[type=checkbox]+ label
 {
     background-size: cover;
     border: solid 4px #eee;
-    width: 42vw;
-    height:42vw; 
+    width: 36vw;
+    height:36vw; 
     display:inline-block;
 }
 input#chimney1[type=checkbox]+ label
@@ -49,7 +49,18 @@ border: solid 4px rgb(38, 148, 38);
 }
 
 /*---------------------------------------------PC version-------*/
-@media screen and (min-width: 769px) {
+  @media screen and (min-width: 769px) {
+ input#chimney1[type=checkbox]+ label, input#chimney2[type=checkbox]+ label
+{
+    background-size: cover;
+    border: solid 4px #eee;
+    width: 45%;
+    height:150px; 
+    display:inline-block;
+}
+
+  }
+  @media screen and (min-width: 1193px) {
  input#chimney1[type=checkbox]+ label, input#chimney2[type=checkbox]+ label
 {
     background-size: cover;

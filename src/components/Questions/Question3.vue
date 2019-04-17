@@ -64,8 +64,8 @@ input#cloture1[type=checkbox]+ label, input#cloture2[type=checkbox]+ label, inpu
 {
     background-size: cover;
     border: solid 4px #eee;
-    width: 40vw;
-    height:60vw; 
+    width: 36vw;
+    height:53vw; 
     display:inline-block;
 }
 input#cloture1[type=checkbox]+ label
@@ -102,10 +102,21 @@ input#cloture1[type=checkbox]:checked + label, input#cloture2[type=checkbox]:che
 @media screen and (min-width: 769px) {
   input#cloture1[type=checkbox]+ label, input#cloture2[type=checkbox]+ label, input#cloture3[type=checkbox]+ label, input#cloture4[type=checkbox]+ label
 {
-    background-size: cover;
+      background-size: cover;
     border: solid 4px #eee;
-    width: 200px;
-    height:300px; 
+    width: 40%;
+    height:280px; 
+    display:inline-block;
+    margin: 10px;
+}
+}
+@media screen and (min-width: 1194px) {
+  input#cloture1[type=checkbox]+ label, input#cloture2[type=checkbox]+ label, input#cloture3[type=checkbox]+ label, input#cloture4[type=checkbox]+ label
+{
+background-size: cover;
+    border: solid 4px #eee;
+    width: 250px;
+    height:350px; 
     display:inline-block;
     margin: 10px;
 }
