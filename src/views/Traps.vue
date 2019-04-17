@@ -2,38 +2,44 @@
   <div id="traps" class="traps">
     <div class="linkToHome">
       <router-link to="/">
-          <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-arrow-left"></i>
       </router-link>
-      </div>
-      <div class="downArrow">
-          <i class="fas fa-arrow-down"></i>
-      </div>
+    </div>
+    <div class="downArrow">
+      <i class="fas fa-arrow-down"></i>
+    </div>
     <section class="pieges">
       <div class="header">
-    <h1>{{ $t("trapsPage.title") }}</h1>
-    <p class="cliquez">{{$t("trapsPage.description")}}</p>
+        <h1>{{ $t("trapsPage.title") }}</h1>
+        <p class="cliquez">{{$t("trapsPage.description")}}</p>
       </div>
-    <div id="cheminee_bloc" class="cliquable">
-      <img src="../assets/cheminee.png"
-              @click="openPopUp('chimney')" alt="cheminee cliquable">
-    </div>
-    <div id="vitre_bloc" class="cliquable">
-      <img src="../assets/fenetre.png"
-          @click="openPopUp('windows')"  alt="vitre cliquable">
-    </div>
-    <div id="clotureBack_bloc" class="cliquable">
-      <img src="../assets/clotureFond.png" @click="openPopUp('fence')" alt="cloture du fond cliquable">
-    </div>
-    <div id="clotureFront_bloc" class="cliquable">
-      <img src="../assets/cloturePremirPlan.png" @click="openPopUp('fence')" alt="cloture du premier plan cliquable">
-    </div>
-    <div id="tondeuse_bloc" class="cliquable">
-      <img src="../assets/tondeuse.png" @click="openPopUp('lawnMower')" alt="tondeuse cliquable">
-    </div>
-    <div id="piscine_bloc" class="cliquable">
-      <img src="../assets/piscine.png" @click="openPopUp('pool')" alt="piscine cliquable">
-    </div>
-    <div class="stylePC"></div>
+      <div id="cheminee_bloc" class="cliquable">
+        <img src="../assets/cheminee.png" @click="openPopUp('chimney')" alt="cheminee cliquable">
+      </div>
+      <div id="vitre_bloc" class="cliquable">
+        <img src="../assets/fenetre.png" @click="openPopUp('windows')" alt="vitre cliquable">
+      </div>
+      <div id="clotureBack_bloc" class="cliquable">
+        <img
+          src="../assets/clotureFond.png"
+          @click="openPopUp('fence')"
+          alt="cloture du fond cliquable"
+        >
+      </div>
+      <div id="clotureFront_bloc" class="cliquable">
+        <img
+          src="../assets/cloturePremirPlan.png"
+          @click="openPopUp('fence')"
+          alt="cloture du premier plan cliquable"
+        >
+      </div>
+      <div id="tondeuse_bloc" class="cliquable">
+        <img src="../assets/tondeuse.png" @click="openPopUp('lawnMower')" alt="tondeuse cliquable">
+      </div>
+      <div id="piscine_bloc" class="cliquable">
+        <img src="../assets/piscine.png" @click="openPopUp('pool')" alt="piscine cliquable">
+      </div>
+      <div class="stylePC"></div>
     </section>
     <b-modal :active.sync="isPopupActive" has-modal-card>
       <Popup :popupRef="popupRef"></Popup>
@@ -43,7 +49,7 @@
         <p class="trapsFound">{{$t("trapsPage.allTrapsFound")}}</p>
         <p class="goQuizz">{{$t("trapsPage.goQuizz")}}</p>
         <router-link to="/quizz">
-          <i id="next" class="fas fa-arrow-circle-down" @click = "hideAbsoluteElements"></i>
+          <i id="next" class="fas fa-arrow-circle-down" @click="hideAbsoluteElements"></i>
         </router-link>
       </div>
     </div>
@@ -81,7 +87,7 @@ export default {
 </script>
 
 <style scoped>
-.linkToHome{
+.linkToHome {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -89,27 +95,31 @@ export default {
   color: #555;
 }
 
-.downArrow{
+.downArrow {
   position: fixed;
   bottom: 10px;
   left: 10px;
   font-size: 2vmin;
   color: #555;
 }
-.downArrow i{ color:rgba(238, 238, 238, 0.8);}
-.linkToHome i {color: rgba(110, 110, 110, 0.4);}
+.downArrow i {
+  color: rgba(238, 238, 238, 0.8);
+}
+.linkToHome i {
+  color: rgba(110, 110, 110, 0.4);
+}
 
-.header{
-  padding:20vmin 0;
+.header {
+  padding: 20vmin 0;
   background-color: rgba(255, 255, 255, 0.8);
-  height:70vmin;
+  height: 70vmin;
 }
 .pieges {
   background-image: url("../assets/fond_website-compressed.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
-  height:645vw;
+  height: 634vw;
 }
 
 h1 {
@@ -119,7 +129,7 @@ h1 {
   padding: 0 20vmin;
 }
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 5vmin;
 }
 .cliquez {
@@ -131,17 +141,15 @@ p {
 
 /*-------------ELEMENTS CLIQUABLES----------------*/
 
-.cliquable
-{
-  opacity:0;
+.cliquable {
+  opacity: 0;
   width: 100%;
   position: absolute;
   animation: appear 1s forwards;
   animation-delay: 0.9s;
 }
 
-.cliquable img
-{
+.cliquable img {
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-delay: 2s;
@@ -195,8 +203,8 @@ p {
 }
 /*----------------TONDEUSE-----------------------*/
 #tondeuse_bloc {
-  text-align:left;
-  top: 350vw;
+  text-align: left;
+  top: 350vmin;
 }
 
 #tondeuse_bloc img {
@@ -220,8 +228,12 @@ p {
 /*----------------ANIMATIONS-----------------------*/
 
 @keyframes appear {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes boingPetit {
@@ -254,7 +266,7 @@ p {
   background-color: #eee;
   padding: 45px;
   text-align: center;
-  z-index:999;
+  z-index: 999;
 }
 
 .trapsFound {
@@ -279,10 +291,10 @@ i {
 /* PC VERSION ------------------------------------------------------------------------------------------- */
 @media screen and (min-width: 769px) {
   .pieges {
-    background-color:#fff;
+    background-color: #fff;
     background-position: top right;
     background-size: 35%;
-    height:224vmax;
+    height: 222vmax;
   }
 
   .header{
@@ -301,75 +313,82 @@ p {
 .cliquez {
   padding: 0 10vmax;
 }
+  h1 {
+    font-size: 3vmax;
+    padding: 0 20vmax;
+  }
+  p {
+    font-size: 1.7vmax;
+  }
+  .cliquez {
+    padding: 0 10vmax;
+  }
 
-.stylePC
-{
-  position:absolute;
-  background-color: beige;
-  z-index: 40;
-  height:204vmax;
-  width:65%;
-}
-/*----------------CHEMINEE-----------------------*/
-#cheminee_bloc {
-  top: 33vmax;
-}
-#cheminee_bloc img {
-  width: 6%;
-  margin-right: 5%;
-}
+  .stylePC {
+    position: absolute;
+    background-color:#eee;
+    z-index: 40;
+    height: 204vmax;
+    width: 65%;
+  }
+  /*----------------CHEMINEE-----------------------*/
+  #cheminee_bloc {
+    top: 33vmax;
+  }
+  #cheminee_bloc img {
+    width: 6%;
+    margin-right: 5%;
+  }
 
-/*----------------VITRE-----------------------*/
-#vitre_bloc {
-  text-align: right;
-  top: 51vmax;
-}
+  /*----------------VITRE-----------------------*/
+  #vitre_bloc {
+    text-align: right;
+    top: 51vmax;
+  }
 
-#vitre_bloc img {
-  width: 9%;
-  margin-right: 10.5%;
-}
+  #vitre_bloc img {
+    width: 9%;
+    margin-right: 10.5%;
+  }
 
-/*----------------CLOTURE DU FOND-----------------------*/
-#clotureBack_bloc {
-  text-align: right;
-  top: 86vmax;
-}
+  /*----------------CLOTURE DU FOND-----------------------*/
+  #clotureBack_bloc {
+    text-align: right;
+    top: 86vmax;
+  }
 
-#clotureBack_bloc img {
-  width: 15%;
-  margin-right: 20.1%;
-}
-/*----------------CLOTURE DU PREMIER PLAN-----------------------*/
-#clotureFront_bloc {
-  text-align:right;
-  top: 172vmax;
-}
+  #clotureBack_bloc img {
+    width: 15%;
+    margin-right: 20.1%;
+  }
+  /*----------------CLOTURE DU PREMIER PLAN-----------------------*/
+  #clotureFront_bloc {
+    text-align: right;
+    top: 172vmax;
+  }
 
-#clotureFront_bloc img {
-  width: 35%;
-}
-/*----------------TONDEUSE-----------------------*/
-#tondeuse_bloc {
-  text-align:right;
-  top: 121vmax;
-}
+  #clotureFront_bloc img {
+    width: 35%;
+  }
+  /*----------------TONDEUSE-----------------------*/
+  #tondeuse_bloc {
+    text-align: right;
+    top: 121vmax;
+  }
 
-#tondeuse_bloc img {
-  width: 10%;
-  margin-right: 21%;
-}
-/*----------------PISCINE-----------------------*/
-#piscine_bloc {
-  text-align: right;
-  top: 137vmax;
-}
+  #tondeuse_bloc img {
+    width: 10%;
+    margin-right: 21%;
+  }
+  /*----------------PISCINE-----------------------*/
+  #piscine_bloc {
+    text-align: right;
+    top: 137vmax;
+  }
 
-#piscine_bloc img {
-  width: 22%;
-}
-
+  #piscine_bloc img {
+    width: 22%;
+  }
 }
 /* ----------------------------------------------------------------------------------------------------------*/
-
 </style>

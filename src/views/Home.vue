@@ -1,4 +1,4 @@
-<template  >
+<template >
   <div  id="home" class="home">
     <img src="../assets/logo-birdlife.png" alt="BirdLife logo" class="logo">
     <h1>{{ $t("landingPage.title") }}</h1>
@@ -61,7 +61,6 @@ p {
 
 .description {
   text-align: left;
-
   color: #006eab;
 }
 

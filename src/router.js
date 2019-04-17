@@ -8,6 +8,7 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
+    // --------- Website --------
     {
       path: '/',
       name: 'home',
@@ -16,26 +17,41 @@ export default new Router({
     {
       path: '/pieges',
       name: 'pieges',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('./views/Traps.vue')
     },
+    // --------- QUIZZ --------
     {
       path: '/quizz',
       name: 'quizz',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('./views/Quizz.vue')
     },
+    // --------- QUESTION --------
+    {
+      path: '/quizz/question/:idQuestion',
+      name: 'questions',
+      props: true,
+      component: () => import('./views/Question.vue')
+    },
+    // --------- REGISTER --------
     {
       path: '/register',
       name: 'register',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('./views/Register.vue')
+    }, {
+      path: '/registerConfirm',
+      name: 'registerConfirm',
+      component: () => import('./views/RegisterConfirm.vue')
+    },
+    // --------- ADMIN PANEL --------
+    {
+      path: '/admin/login',
+      name: 'login',
+      component: () => import('./views/Backend/Login.vue')
+    },
+    {
+      path: '/admin/home',
+      name: 'adminHome',
+      component: () => import('./views/Backend/Home.vue')
     }
   ]
 })
