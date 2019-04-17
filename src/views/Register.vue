@@ -118,7 +118,7 @@ export default {
         npa: this.npa,
         email: this.email,
         canSendNewsletter: this.acceptNewsletter,
-        hashAnswers: SHA1(quizzStorage.results),
+        hashAnswers: SHA1(JSON.stringify(quizzStorage.results)),
         answers: quizzStorage.results
       })
 
@@ -138,7 +138,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.register {
- 
-}
+
 </style>

@@ -54,7 +54,6 @@ export default {
   },
   data () {
     return {
-      slctAnswer: 0,
       chckboxAnswer: []
     }
   },
@@ -63,7 +62,13 @@ export default {
   },
   methods: {
     change (e) {
-      this.$emit('change', sha1(this.chckboxAnswer))
+      // Sort to always have the same order for the hash
+      this.chckboxAnswer.sort((a, b) => {
+        if (a < b) { return -1 }
+        if (a > b) { return 1 }
+        return 0
+      })
+      this.$emit('change', sha1(JSON.stringify(this.chckboxAnswer)))
     }
   }
 }

@@ -2,13 +2,13 @@
   <div>
     <b-field :label="$t('question6.chimneychoice')">
       <div class="block">
-        <input type="checkbox" name='chimney1' id="chimney1" v-on:input="change"/><label for="chimney1"></label>
-        <input type="checkbox" name='chimney2' id="chimney2" v-on:input="change"/><label for="chimney2"></label>
+        <input type="checkbox" v-model="chckboxAnswer" value='chimney1' id="chimney1" v-on:change="change"/><label for="chimney1"></label>
+        <input type="checkbox" v-model="chckboxAnswer" value='chimney2' id="chimney2" v-on:change="change"/><label for="chimney2"></label>
       </div>
     </b-field>
     <b-field :label="$t('question6.maxopening')" id="openingChimney">
-      <input ref="sliderBulma" v-model="value" class="slider is-fullwidth is-large is-circle" step="5" min="0" max="50" type="range" v-on:input="change" >
-        <p>{{value}} cm</p>
+      <input ref="sliderBulma" v-model="maxopening" class="slider is-fullwidth is-large is-circle" step="5" min="0" max="50" type="range" v-on:input="change" >
+        <p>{{maxopening}} mm</p>
     </b-field>
   </div>
 </template>
@@ -29,8 +29,13 @@ input#chimney1[type=checkbox]+ label, input#chimney2[type=checkbox]+ label
 {
     background-size: cover;
     border: solid 4px #eee;
+<<<<<<< HEAD
     width: 36vw;
     height:36vw; 
+=======
+    width: 42vw;
+    height:42vw;
+>>>>>>> 8f8f4de19d0efbaedd5645cae7db97480cb2efd1
     display:inline-block;
 }
 input#chimney1[type=checkbox]+ label
@@ -84,8 +89,7 @@ export default {
   data () {
     return {
       maxopening: 0,
-      chckboxAnswer: [],
-      value:0
+      chckboxAnswer: []
     }
   },
   mounted () {
@@ -93,7 +97,14 @@ export default {
   },
   methods: {
     change (e) {
-      this.$emit('change', sha1([this.maxopening, this.chckboxAnswer]))
+      // Sort to always have the same order for the hash
+      this.chckboxAnswer.sort((a, b) => {
+        if (a < b) { return -1 }
+        if (a > b) { return 1 }
+        return 0
+      })
+
+      this.$emit('change', sha1(JSON.stringify([this.maxopening, this.chckboxAnswer])))
     }
   }
 }
