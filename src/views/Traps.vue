@@ -46,8 +46,8 @@
     </b-modal>
     <div class="bottom">
       <div class="link_to_quizz">
-        <p class="trapsFound">{{$t("trapsPage.allTrapsFound")}}</p>
-        <p class="goQuizz">{{$t("trapsPage.goQuizz")}}</p>
+        <h2 class="trapsFound subtitle is-4">{{$t("trapsPage.allTrapsFound")}}</h2>
+        <h2 class="goQuizz subtitle is-4">{{$t("trapsPage.goQuizz")}}</h2>
         <router-link to="/quizz">
           <i id="next" class="fas fa-arrow-circle-down" @click="hideAbsoluteElements"></i>
         </router-link>
@@ -266,22 +266,18 @@ p {
 }
 
 .trapsFound {
-  color: #006eab;
-  font-size: 1.4em;
   line-height: 1.4em;
-  font-weight: bold;
 }
 
 .goQuizz {
-  font-style: italic;
-  font-weight: bold;
   line-height: 1.2em;
   padding-top: 10px;
+  color: rgb(38, 148, 38);
 }
 i {
   margin-top: 15px;
   font-size: 3em;
-  color: #555;
+  color: rgb(38, 148, 38);
 }
 
 /* PC VERSION ------------------------------------------------------------------------------------------- */

@@ -53,7 +53,6 @@ p {
   text-align: left;
   font-size: 17px;
   line-height: 17pt;
-  color: #006eab;
 }
 
 .logo {
@@ -64,7 +63,7 @@ p {
 i {
   margin-top: 5vh;
   font-size: 8vh;
-  color: #555;
+  color: rgb(38, 148, 38);
   margin-bottom: 100px;
 }
 /*-----PC-----*/
