@@ -46,13 +46,8 @@ input#cloture1[type=checkbox]+ label, input#cloture2[type=checkbox]+ label, inpu
 {
     background-size: cover;
     border: solid 4px #eee;
-<<<<<<< HEAD
     width: 36vw;
     height:53vw; 
-=======
-    width: 40vw;
-    height:60vw;
->>>>>>> 8f8f4de19d0efbaedd5645cae7db97480cb2efd1
     display:inline-block;
 }
 input#cloture1[type=checkbox]+ label
