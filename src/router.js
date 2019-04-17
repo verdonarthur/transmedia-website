@@ -41,7 +41,12 @@ export default new Router({
       path: '/registerConfirm',
       name: 'registerConfirm',
       component: () => import('./views/RegisterConfirm.vue')
+    },{
+      path: '/cgu',
+      name: 'cgu',
+      component: () => import('./views/CGU.vue')
     },
+
     // --------- ADMIN PANEL --------
     {
       path: '/admin/login',
