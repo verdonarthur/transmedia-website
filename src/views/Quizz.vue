@@ -6,11 +6,11 @@
       </router-link>
     </div>
     <img src="../assets/logo-birdlife.png" alt="BirdLife logo" class="logo">
-    <h1>{{ $t("quizzPage.title") }}</h1>
-    <h2 class="sous-titre">{{$t("quizzPage.sous-titre")}}</h2>
+    <h1 class="title is-3">{{ $t("quizzPage.title") }}</h1>
+    <h2 class="sous-titre subtitle is-4">{{$t("quizzPage.sous-titre")}}</h2>
   <div class="prices">
     <p class="description">{{$t("quizzPage.description")}}</p>
-    <h2 class>{{$t("quizzPage.description2")}}</h2>
+    <h2 class="subtitle is-5">{{$t("quizzPage.description2")}}</h2>
     <div class="columns is-vcentered is-mobile">
       <div class="column">
         <img src="../assets/quizz/set-brochures.png">
@@ -62,7 +62,7 @@ export default {
   position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 6vw;
+  font-size: 25px;
   color: #555;
 }
 .linkToHome i {
@@ -73,32 +73,27 @@ export default {
   font-family: 'Fjalla One', sans-serif;
   border:none;
   margin-top:15px;
+  margin-bottom: 30px;
 }
 
 .quizz {
   background-color: #eee;
-  height: 100%;
   padding-left: 2.5%;
   padding-right: 2.5%;
   text-align: center;
 }
 
-h1 {
-  font-size: 6vw;
-  line-height: 8vw;
+.title {
   color: #555;
 }
 
 .description {
   font-family: "Roboto", sans-serif;
   font-size: 2.25vh;
-  text-align: left;
-  margin-bottom:7vw;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.sous-titre {
-  font-size: 5vw;
-}
 
 .logo {
   height: 15vh;
@@ -118,4 +113,13 @@ h2 {
 {
  padding:0 2vw 1vw 2vw;
 }
+
+/*---------------------------------------------PC version-------*/
+@media screen and (min-width: 769px) {
+ 
+ .prices{
+   padding: 1vw 7vw 3vw 7vw;
+ margin: 0 100px;
+ }
+  }
 </style>

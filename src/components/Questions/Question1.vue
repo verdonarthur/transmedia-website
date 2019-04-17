@@ -1,8 +1,7 @@
 <template>
-  <div>
+  <div id="question1">
     <div id="fence">
-        <img id="lawn" src="../../assets/quizz/cloture_base.png" alt="Herbe">
-        <img id="cloture" src="../../assets/quizz/cloture_move.png" alt="Clôture à bouger en hauteur">
+        <img id="lawn" src="../../assets/quizz/cloture_move.png" alt="Herbe">
       </div>
     <b-field :label="$t('question1.fenceHeight')" id="fenceHeight">
       <input ref="sliderBulma" v-model="value" class="slider is-fullwidth is-large is-circle" step="5" min="0" max="30" type="range" v-on:input="change" >
@@ -27,19 +26,16 @@ input.slider{
 {
   margin-top:4vw;
 }
-#lawn
-{
-  margin-top:45vw;
-  position:relative;
-  z-index:1;
-}
-#cloture
-{
-  padding:0 1.5rem;
-  position: absolute;
-  z-index:0;
-  left:0;
-}
+
+/*---------------------------------------------PC version-------*/
+@media screen and (min-width: 769px) {
+  #fence
+  {
+  text-align: center;
+  padding: 0 5vw;
+  }
+  
+  }
 
 </style>
 

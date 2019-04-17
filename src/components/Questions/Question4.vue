@@ -65,6 +65,17 @@
 {
   background-color: white;
 }
+/*---------------------------------------------PC version-------*/
+@media screen and (min-width: 769px) {
+ 
+  #colors .check
+{
+  width:70px;
+  height:70px;
+  border:none;
+  margin: 2vw 1vw;
+}
+  }
 </style>
 
 <script>

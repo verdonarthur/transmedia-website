@@ -35,17 +35,17 @@
 }
 #answers .b-radio .control-label
 {
-  padding: 2vw 5vw;
+  padding: 10px 30px;
 }
 #bouee, #bateau
 {
   margin-right:5vw;
-  width:25%;
+  width:60px;
 }
 #plancheBois
 {
   margin-right:5vw;
-  width: 18%;
+  width:45px;
 }
 
 #herisson

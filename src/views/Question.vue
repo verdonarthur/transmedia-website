@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <h1>Question {{this.idQuestion}} : {{ $t(`question${this.idQuestion}.title`) }}</h1>
+    <h1 class="title is-5">Question {{this.idQuestion}} : {{ $t(`question${this.idQuestion}.title`) }}</h1>
     <div>
       <component v-bind:is="currentQuestion" v-on:change="change"></component>
     </div>
@@ -13,12 +13,12 @@
 {
   background-color: #eee;
 }
-h1
+h1.title
 {
-font-size: 4.5vw;
 margin-bottom: 4vw;
 color: #269426;
 }
+
 .button{
   text-align:center;
   display:block;
@@ -28,6 +28,13 @@ color: #269426;
   font-family: 'Fjalla One', sans-serif;
   border:none;
   margin-top:15px;
+}
+/*---------------------------------------------PC version-------*/
+@media screen and (min-width: 769px) {
+  .section
+  {
+    padding: 4vw 25vw;
+  }
 }
 
 </style>

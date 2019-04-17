@@ -119,7 +119,7 @@ export default {
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
-  height: 645vw;
+  height: 634vw;
 }
 
 h1 {
@@ -294,7 +294,7 @@ i {
     background-color: #fff;
     background-position: top right;
     background-size: 35%;
-    height: 224vmax;
+    height: 222vmax;
   }
 
   .header {
@@ -316,7 +316,7 @@ i {
 
   .stylePC {
     position: absolute;
-    background-color: beige;
+    background-color:#eee;
     z-index: 40;
     height: 204vmax;
     width: 65%;

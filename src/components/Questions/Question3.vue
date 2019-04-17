@@ -97,6 +97,20 @@ input#cloture1[type=checkbox]:checked + label, input#cloture2[type=checkbox]:che
 {
   text-align: center;
 }
+
+/*---------------------------------------------PC version-------*/
+@media screen and (min-width: 769px) {
+  input#cloture1[type=checkbox]+ label, input#cloture2[type=checkbox]+ label, input#cloture3[type=checkbox]+ label, input#cloture4[type=checkbox]+ label
+{
+    background-size: cover;
+    border: solid 4px #eee;
+    width: 200px;
+    height:300px; 
+    display:inline-block;
+    margin: 10px;
+}
+  
+  }
 </style>
 
 

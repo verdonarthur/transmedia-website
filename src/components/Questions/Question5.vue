@@ -34,6 +34,15 @@
   display: flex;
   margin: 5vw;
 }
+
+/*---------------------------------------------PC version-------*/
+@media screen and (min-width: 769px) {
+ #garden .checkbox
+ {
+ margin: 25px;
+ }
+
+  }
 </style>
 
 <script>
