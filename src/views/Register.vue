@@ -46,7 +46,7 @@
         </div>
 
         <div class="field">
-          <b-checkbox v-model="acceptCGU">{{$t('registerPage.acceptCGU')}}</b-checkbox>
+          <b-checkbox v-model="acceptCGU">{{$t('registerPage.acceptCGU')}} <a :href="($router.resolve({name:'cgu'})).href" target="_blank">CGU</a></b-checkbox>
         </div>
 
         <b-message
