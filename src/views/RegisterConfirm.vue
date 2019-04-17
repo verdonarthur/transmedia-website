@@ -25,7 +25,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .registerConfirm {
-  height: 100%;
+  min-height: 100vh;
   text-align: center;
   color:rgba(110, 110, 110, 0.4);
 
@@ -33,7 +33,7 @@ export default {
     width: 100%;
     height: 40%;
 
-    font-size: 15vw;
+    font-size: 10vh;
     color:rgb(38, 148, 38);
   }
 

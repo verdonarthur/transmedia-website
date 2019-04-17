@@ -18,9 +18,9 @@ export function convertToCSV (objArray) {
   for (let i = 0; i < array.length; i++) {
     let line = ''
     for (let index in array[i]) {
-      if (line !== '') line += ','
+      if (line !== '') line += '; '
 
-      line += array[i][index]
+      line += (String(array[i][index])).replace(';', '')
     }
 
     str += line + '\r\n'

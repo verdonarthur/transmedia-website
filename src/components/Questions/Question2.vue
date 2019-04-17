@@ -2,11 +2,11 @@
   <div>
     <img id="herisson" src="../../assets/quizz/piscine_herisson.jpg" alt="">
     <div class="block" id="answers">
-      <b-radio v-model="radioAnswer" native-value="Plank" :checked="checked" v-on:input="change">
-        <p class="object-name"><img id="plancheBois" src="../../assets/quizz/planche_bois.png" alt="planche de bois" align="middle">   {{$t('question2.plank')}}</p>
-      </b-radio>
-      <b-radio v-model="radioAnswer" native-value="Lifebuoy" v-on:input="change">
+      <b-radio v-model="radioAnswer" native-value="Lifebuoy" :checked="checked" v-on:input="change">
         <p class="object-name"><img id="bouee" src="../../assets/quizz/bouee.png" alt="bouée de sauvetage" align="middle">    {{$t('question2.lifebuoy')}}</p>
+      </b-radio>
+      <b-radio v-model="radioAnswer" native-value="Plank"  v-on:input="change">
+        <p class="object-name"><img id="plancheBois" src="../../assets/quizz/planche_bois.png" alt="planche de bois" align="middle">   {{$t('question2.plank')}}</p>
       </b-radio>
       <b-radio v-model="radioAnswer" native-value="Paperboat" v-on:input="change">
         <p class="object-name"><img id="bateau" src="../../assets/quizz/bateau_papier.png" alt="bateau en papier" align="middle">    {{$t('question2.paperboat')}}</p>
@@ -65,7 +65,7 @@ export default {
   data () {
     return {
       checked: true,
-      radioAnswer: 'Plank'
+      radioAnswer: 'Lifebuoy'
     }
   },
   mounted () {
