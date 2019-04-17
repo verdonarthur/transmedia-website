@@ -1,71 +1,77 @@
 <template>
   <div class="register">
     <div class="section">
-    <form class="box" @submit.prevent="register">
-      <h1>{{ $t("registerPage.title") }}</h1>
-      <p>{{$t("registerPage.description")}}</p>
-      <section>
-        <div class="field is-horizontal">
-          <div class="field-body">
-            <b-field :label="$t('registerPage.name')">
-              <b-input v-model="name" required></b-input>
-            </b-field>
+      <form class="box" @submit.prevent="register">
+        <h1>{{ $t("registerPage.title") }}</h1>
+        <p>{{$t("registerPage.description")}}</p>
+        <section>
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <b-field :label="$t('registerPage.name')">
+                <b-input v-model="name" maxlength="50" required></b-input>
+              </b-field>
 
-            <b-field :label="$t('registerPage.surname')">
-              <b-input v-model="surname" value="johnsilver" maxlength="30" required></b-input>
-            </b-field>
+              <b-field :label="$t('registerPage.surname')">
+                <b-input v-model="surname" maxlength="50" required></b-input>
+              </b-field>
+            </div>
           </div>
-        </div>
 
-        <b-field :label="$t('registerPage.birthdate')">
-          <b-datepicker v-model="birthdate" icon="calendar" required></b-datepicker>
-        </b-field>
+          <b-field :label="$t('registerPage.birthdate')">
+            <b-datepicker v-model="birthdate" icon="calendar" required></b-datepicker>
+          </b-field>
 
-        <div class="field is-horizontal">
-          <div class="field-body">
-            <b-field :label="$t('registerPage.city')">
-              <b-input v-model="city" required></b-input>
-            </b-field>
+          <b-field :label="$t('registerPage.address')">
+            <b-input v-model="street" type="text" maxlength="50" required></b-input>
+          </b-field>
 
-            <b-field :label="$t('registerPage.NPA')">
-              <b-input v-model="npa" type="number" value="1000" max="9999" required></b-input>
-            </b-field>
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <b-field :label="$t('registerPage.NPA')">
+                <b-input v-model="npa" type="number"  max="9999"  required></b-input>
+              </b-field>
+
+              <b-field :label="$t('registerPage.city')">
+                <b-input v-model="city" maxlength="50" required></b-input>
+              </b-field>
+            </div>
           </div>
-        </div>
 
-        <b-field :label="$t('registerPage.address')">
-          <b-input v-model="street" type="text" value="ch. de l'oiseau 3" maxlength="50" required></b-input>
-        </b-field>
+          <b-field :label="$t('registerPage.email')">
+            <b-input v-model="email" type="email"  maxlength="50" required></b-input>
+          </b-field>
 
-        <b-field :label="$t('registerPage.email')">
-          <b-input v-model="email" type="email" value="john@example.ch" maxlength="30" required></b-input>
-        </b-field>
+          <div class="field">
+            <b-checkbox v-model="acceptNewsletter">{{$t('registerPage.acceptNewsletter')}}</b-checkbox>
+          </div>
 
-        <div class="field">
-          <b-checkbox v-model="acceptNewsletter">{{$t('registerPage.acceptNewsletter')}}</b-checkbox>
-        </div>
+          <div class="field">
+            <b-checkbox v-model="acceptCGU">
+              {{$t('registerPage.acceptCGU')}}
+              <a
+                :href="($router.resolve({name:'cgu'})).href"
+                target="_blank"
+              >CGU</a>
+            </b-checkbox>
+          </div>
 
-        <div class="field">
-          <b-checkbox v-model="acceptCGU">{{$t('registerPage.acceptCGU')}} <a :href="($router.resolve({name:'cgu'})).href" target="_blank">CGU</a></b-checkbox>
-        </div>
+          <b-message
+            type="is-danger"
+            :active.sync="mustAcceptCGU"
+            has-icon
+          >{{$t('register.mustAcceptCGU')}}</b-message>
 
-        <b-message
-          type="is-danger"
-          :active.sync="mustAcceptCGU"
-          has-icon
-        >{{$t('register.mustAcceptCGU')}}</b-message>
+          <b-message
+            type="is-danger"
+            :active.sync="unknownError"
+            has-icon
+          >{{$t('register.unknownError')}}</b-message>
 
-        <b-message
-          type="is-danger"
-          :active.sync="unknownError"
-          has-icon
-        >{{$t('register.unknownError')}}</b-message>
-
-        <div class="field">
-          <button class="button" >{{$t('registerPage.participate')}}</button>
-        </div>
-      </section>
-    </form>
+          <div class="field">
+            <button class="button">{{$t('registerPage.participate')}}</button>
+          </div>
+        </section>
+      </form>
     </div>
   </div>
 </template>
@@ -122,15 +128,18 @@ export default {
         answers: quizzStorage.results
       })
 
-      participant.save().then(res => {
-        loadComp.close()
-        this.$router.push({
-          name: 'registerConfirm'
+      participant
+        .save()
+        .then(res => {
+          loadComp.close()
+          this.$router.push({
+            name: 'registerConfirm'
+          })
         })
-      }).catch(() => {
-        loadComp.close()
-        this.unknownError = true
-      })
+        .catch(() => {
+          loadComp.close()
+          this.unknownError = true
+        })
     }
   }
 }
@@ -138,5 +147,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 </style>

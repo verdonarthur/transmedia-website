@@ -33,7 +33,7 @@ export default {
     width: 100%;
     height: 40%;
 
-    font-size: 15vw;
+    font-size: 10vh;
     color:rgb(38, 148, 38);
   }
 

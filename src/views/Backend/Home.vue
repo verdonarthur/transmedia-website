@@ -1,5 +1,6 @@
 <template>
-  <section class="loginBackend section">
+  <section class="loginBackend">
+    <div class="section">
     <section class="hero">
       <div class="hero-body">
         <div class="container">
@@ -22,6 +23,7 @@
       ></b-table>
       <a class="button" download="data.csv" :href="dataURL">{{$t('backend.exportCSV')}}</a>
     </div>
+    </div>
   </section>
 </template>
 
@@ -34,7 +36,7 @@ export default {
       participants: [],
       isLoading: true,
       current: 1,
-      perPage: 20,
+      perPage: 15,
       dataURL: '',
       columns: [
         {
