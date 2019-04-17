@@ -1,5 +1,10 @@
 <template>
   <div class="quizz">
+    <div class="linkToHome">
+      <router-link to="/pieges">
+        <i class="fas fa-arrow-left"></i>
+      </router-link>
+    </div>
     <img src="../assets/logo-birdlife.png" alt="BirdLife logo" class="logo">
     <h1>{{ $t("quizzPage.title") }}</h1>
     <h2 class="sous-titre">{{$t("quizzPage.sous-titre")}}</h2>
@@ -53,6 +58,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.linkToHome {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 6vw;
+  color: #555;
+}
+.linkToHome i {
+  color: rgba(110, 110, 110, 0.4);
+}
 .button{
   color:white;
   font-family: 'Fjalla One', sans-serif;
