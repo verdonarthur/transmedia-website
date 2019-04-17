@@ -5,8 +5,8 @@
         <img id="cloture" src="../../assets/quizz/cloture_move.png" alt="Clôture à bouger en hauteur">
       </div>
     <b-field :label="$t('question1.fenceHeight')" id="fenceHeight">
-      <input ref="sliderBulma" v-model="value" class="slider is-fullwidth is-large is-circle" step="5" min="0" max="30" type="range" v-on:input="change" >
-        <p>{{value}} cm</p>
+      <input ref="sliderBulma" v-model="heightClosure" class="slider is-fullwidth is-large is-circle" step="5" min="0" max="30" type="range" v-on:input="change" >
+        <p>{{heightClosure}} cm</p>
       </b-field>
   </div>
 </template>
@@ -54,8 +54,7 @@ export default {
   data () {
     return {
       heightClosure: 0,
-      bulmaSlider:{},
-      value:0
+      bulmaSlider: {}
     }
   },
   mounted () {

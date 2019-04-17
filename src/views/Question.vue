@@ -64,7 +64,7 @@ export default {
       if (this.idQuestion < NBR_QUESTION) {
         this.$router.push({
           name: 'questions',
-          params: { idQuestion: Number(this.idQuestion) + 1 }
+          params: { idQuestion: Number(Number(this.idQuestion) + 1) }
         })
       } else {
         this.$router.push({

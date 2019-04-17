@@ -25,8 +25,8 @@
       </div>
     </b-field>
     <b-field :label="$t('question4.distancechoice')" id="distanceSticker">
-      <input ref="sliderBulma" v-model="value" class="slider is-fullwidth is-large is-circle" step="5" min="0" max="100" type="range" v-on:input="change" >
-        <p>{{value}} cm</p>
+      <input ref="sliderBulma" v-model="slctAnswer" class="slider is-fullwidth is-large is-circle" step="5" min="0" max="100" type="range" v-on:input="change" >
+        <p>{{slctAnswer}} cm</p>
     </b-field>
   </div>
 </template>
@@ -78,8 +78,7 @@ export default {
   data () {
     return {
       slctAnswer: 0,
-      chckboxAnswer: [],
-      value:0
+      chckboxAnswer: []
     }
   },
   mounted () {
@@ -87,7 +86,14 @@ export default {
   },
   methods: {
     change (e) {
-      this.$emit('change', sha1([this.slctAnswer, this.chckboxAnswer]))
+      // Sort to always have the same order for the hash
+      this.chckboxAnswer.sort((a, b) => {
+        if (a < b) { return -1 }
+        if (a > b) { return 1 }
+        return 0
+      })
+
+      this.$emit('change', sha1(JSON.stringify([this.slctAnswer, this.chckboxAnswer])))
     }
   }
 }

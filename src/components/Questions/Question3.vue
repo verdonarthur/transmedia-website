@@ -1,29 +1,10 @@
 <template>
   <div>
     <div class="block" id="img-choice">
-      <input type="checkbox" name='cloture1' id="cloture1" v-on:input="change"/><label for="cloture1"></label>
-      <input type="checkbox" name='cloture2' id="cloture2" v-on:input="change"/><label for="cloture2"></label>
-      <input type="checkbox" name='cloture3' id="cloture3" v-on:input="change"/><label for="cloture3"></label>
-      <input type="checkbox" name='cloture4' id="cloture4" v-on:input="change"/><label for="cloture4"></label>
-      <!-- <b-checkbox id="test"
-        v-model="chckboxAnswer"
-        native-value="img1"
-        v-on:input="change" :class="{focused:isFocused}" @click.native="checking"></b-checkbox>
-      <b-checkbox
-        v-model="chckboxAnswer"
-        native-value="img2"
-        v-on:input="change"
-      ></b-checkbox>
-      <b-checkbox
-        v-model="chckboxAnswer"
-        native-value="img3"
-        v-on:input="change"
-      >{{$t('question3.img3')}}</b-checkbox>
-      <b-checkbox
-        v-model="chckboxAnswer"
-        native-value="img4"
-        v-on:input="change"
-      >{{$t('question3.img4')}}</b-checkbox> -->
+      <input type="checkbox" id="cloture1" value="fence1" v-model="chckboxAnswer" v-on:change="change"/><label for="cloture1"></label>
+      <input type="checkbox" id="cloture2" value="fence2" v-model="chckboxAnswer" v-on:change="change"/><label for="cloture2"></label>
+      <input type="checkbox" id="cloture3" value="fence3" v-model="chckboxAnswer" v-on:change="change"/><label for="cloture3"></label>
+      <input type="checkbox" id="cloture4" value="fence4" v-model="chckboxAnswer" v-on:change="change"/><label for="cloture4"></label>
     </div>
   </div>
 </template>
@@ -44,14 +25,15 @@ export default {
   },
   methods: {
     change (e) {
-      this.$emit('change', sha1(this.chckboxAnswer))
-    },
-    /* checking (){
-      console.log("blabla");
-      this.isFocused= !this.isFocused;
-      console.log(this.isFocused);
-    } */
-    
+      // Sort to always have the same order for the hash
+      this.chckboxAnswer.sort((a, b) => {
+        if (a < b) { return -1 }
+        if (a > b) { return 1 }
+        return 0
+      })
+
+      this.$emit('change', sha1(JSON.stringify(this.chckboxAnswer)))
+    }
   }
 }
 </script>
@@ -65,7 +47,7 @@ input#cloture1[type=checkbox]+ label, input#cloture2[type=checkbox]+ label, inpu
     background-size: cover;
     border: solid 4px #eee;
     width: 40vw;
-    height:60vw; 
+    height:60vw;
     display:inline-block;
 }
 input#cloture1[type=checkbox]+ label
@@ -88,7 +70,6 @@ input#cloture4[type=checkbox]+ label
   background-image: url("../../assets/quizz/cloture2.jpg");
 }
 
-
 input#cloture1[type=checkbox]:checked + label, input#cloture2[type=checkbox]:checked + label, input#cloture3[type=checkbox]:checked + label, input#cloture4[type=checkbox]:checked + label
 {
   border: solid 4px rgb(38, 148, 38);
@@ -98,5 +79,3 @@ input#cloture1[type=checkbox]:checked + label, input#cloture2[type=checkbox]:che
   text-align: center;
 }
 </style>
-
-
