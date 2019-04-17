@@ -1,14 +1,13 @@
 <template>
   <div class="cgu" v-html="$t('cgu')">
-    
-    
+
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'cgu'
-  }
+export default {
+  name: 'cgu'
+}
 
 </script>
 <style scoped>

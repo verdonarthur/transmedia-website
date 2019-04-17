@@ -64,11 +64,11 @@
 #white .check
 {
   background-color: white;
-  border: solid 2px #ccc; 
+  border: solid 2px #ccc;
 }
 /*---------------------------------------------PC version-------*/
 @media screen and (min-width: 769px) {
- 
+
   #colors .check
 {
   width:70px;
@@ -78,7 +78,7 @@
 }
 #white .check
 {
-  border: solid 2px #ccc; 
+  border: solid 2px #ccc;
 }
   }
 </style>

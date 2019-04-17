@@ -31,7 +31,7 @@
     <router-link to="quizz/question/1">
     <button class="button is-success">{{$t("quizzPage.startButton")}}</button>
     </router-link>
-    
+
   </div>
 </template>
 
@@ -94,7 +94,6 @@ export default {
   margin-bottom: 20px;
 }
 
-
 .logo {
   height: 15vh;
   margin: 4vh 0 5vh 0;
@@ -116,7 +115,7 @@ h2 {
 
 /*---------------------------------------------PC version-------*/
 @media screen and (min-width: 769px) {
- 
+
  .prices{
    padding: 1vw 7vw 3vw 7vw;
  margin: 0 100px;

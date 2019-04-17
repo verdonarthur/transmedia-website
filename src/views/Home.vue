@@ -18,9 +18,9 @@ export default {
   },
   methods: {
     handleScroll () {
-      if((window.scrollY + window.innerHeight )>= document.getElementById('home').offsetHeight)
-      {
-      this.$router.push('/pieges')}
+      if ((window.scrollY + window.innerHeight) >= document.getElementById('home').offsetHeight) {
+        this.$router.push('/pieges')
+      }
     }
   },
   mounted () {

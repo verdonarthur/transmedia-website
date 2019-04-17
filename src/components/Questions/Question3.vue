@@ -47,7 +47,7 @@ input#cloture1[type=checkbox]+ label, input#cloture2[type=checkbox]+ label, inpu
     background-size: cover;
     border: solid 4px #eee;
     width: 36vw;
-    height:53vw; 
+    height:53vw;
     display:inline-block;
 }
 input#cloture1[type=checkbox]+ label
@@ -86,7 +86,7 @@ input#cloture1[type=checkbox]:checked + label, input#cloture2[type=checkbox]:che
       background-size: cover;
     border: solid 4px #eee;
     width: 40%;
-    height:280px; 
+    height:280px;
     display:inline-block;
     margin: 10px;
 }
@@ -97,10 +97,10 @@ input#cloture1[type=checkbox]:checked + label, input#cloture2[type=checkbox]:che
 background-size: cover;
     border: solid 4px #eee;
     width: 250px;
-    height:350px; 
+    height:350px;
     display:inline-block;
     margin: 10px;
 }
-  
+
   }
 </style>

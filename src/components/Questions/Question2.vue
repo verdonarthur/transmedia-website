@@ -48,7 +48,6 @@
   width:45px;
 }
 
-
 #herisson
 {
   margin-bottom: 2vw;
