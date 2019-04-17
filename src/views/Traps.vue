@@ -87,6 +87,10 @@ export default {
 </script>
 
 <style scoped>
+.traps{
+  min-height: 100vh
+}
+
 .linkToHome {
   position: absolute;
   top: 10px;

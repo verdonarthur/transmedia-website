@@ -62,7 +62,6 @@ html,
 body,
 #app {
   background-color: #eee;
-  height: 100%;
 }
 
 p {

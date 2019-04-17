@@ -36,7 +36,7 @@ export default {
 <style scoped>
 .home {
   background-color: #eee;
-  min-height: 101%; /* Doit être >100% pour que la fonction de scroll fonctionne */
+  min-height: 100vh; /* Doit être >100% pour que la fonction de scroll fonctionne */
   text-align: center;
 }
 
