@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <img src="../assets/logo-birdlife.png" alt="BirdLife logo" class="logo">
-    <h1>{{ $t("landingPage.title") }}</h1>
-    <p class="sous-titre">{{$t("landingPage.sous-titre")}}</p>
+    <h1 class="title is-3">{{ $t("landingPage.title") }}</h1>
+    <h2 class="sous-titre subtitle is-4">{{$t("landingPage.sous-titre")}}</h2>
     <p class="description">{{$t("landingPage.description")}}</p>
     <router-link to="/pieges">
       <i id="next" class="fas fa-arrow-circle-down"></i>
@@ -34,41 +34,38 @@ export default {
 <style scoped>
 .home {
   background-color: #eee;
-  height: 101%; /* Doit être >100% pour que la fonction de scroll fonctionne */
+  min-height: 823px; /* Doit être >100% pour que la fonction de scroll fonctionne */
   text-align: center;
 }
 
 h1 {
-  font-size: 7vw;
   line-height: 9vw;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
   color: #555;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.25vh;
   padding: 0 12vw;
 }
 
 .sous-titre {
-  font-size: 7vw;
   margin: 0 0 3vh 0;
+  color:rgb(38, 148, 38);
 }
 
 .description {
   text-align: left;
   color: #006eab;
+  font-size: 17px;
 }
 
 .logo {
-  height: 15vh;
+  height: 13vh;
   margin: 8vh 0 5vh 0;
 }
 
 i {
   margin-top: 5vmax;
+  margin-bottom:120px;
   font-size: 8vmax;
   color: #555;
 }

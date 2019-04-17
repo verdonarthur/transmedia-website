@@ -29,13 +29,8 @@ input#chimney1[type=checkbox]+ label, input#chimney2[type=checkbox]+ label
 {
     background-size: cover;
     border: solid 4px #eee;
-<<<<<<< HEAD
     width: 36vw;
     height:36vw; 
-=======
-    width: 42vw;
-    height:42vw;
->>>>>>> 8f8f4de19d0efbaedd5645cae7db97480cb2efd1
     display:inline-block;
 }
 input#chimney1[type=checkbox]+ label

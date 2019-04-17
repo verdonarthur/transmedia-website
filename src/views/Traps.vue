@@ -10,8 +10,8 @@
     </div>
     <section class="pieges">
       <div class="header">
-        <h1>{{ $t("trapsPage.title") }}</h1>
-        <p class="cliquez">{{$t("trapsPage.description")}}</p>
+        <h1 class="title is-3">{{ $t("trapsPage.title") }}</h1>
+        <p class="cliquez subtitle is-6">{{$t("trapsPage.description")}}</p>
       </div>
       <div id="cheminee_bloc" class="cliquable">
         <img src="../assets/cheminee.png" @click="openPopUp('chimney')" alt="cheminee cliquable">
@@ -133,10 +133,7 @@ p {
   font-size: 5vmin;
 }
 .cliquez {
-  font-style: italic;
-  color: #555;
   padding: 0 20vmin;
-  line-height: 1.3em;
 }
 
 /*-------------ELEMENTS CLIQUABLES----------------*/

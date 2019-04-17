@@ -73,7 +73,7 @@ export default {
   font-family: 'Fjalla One', sans-serif;
   border:none;
   margin-top:15px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .quizz {
