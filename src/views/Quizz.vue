@@ -87,7 +87,6 @@ export default {
 }
 
 .description {
-  font-family: "Roboto", sans-serif;
   font-size: 2.25vh;
   text-align: center;
   margin-bottom: 20px;
@@ -110,7 +109,6 @@ h2 {
   padding: 0 2vw 5px 2vw;
 }
 .clnPrices {
-  font-family: "Roboto", sans-serif;
   font-size: 0.7em;
   font-weight: bold;
 }

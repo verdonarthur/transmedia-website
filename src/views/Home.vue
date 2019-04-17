@@ -73,7 +73,6 @@ h1 {
   line-height: 9vw;}
 
 p {
-  font-family: "Roboto", sans-serif;
   font-size: 2.0vw;
   padding: 0 12vw;
 }

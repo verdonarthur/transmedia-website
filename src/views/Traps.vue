@@ -131,7 +131,6 @@ h1 {
   padding: 0 15vw;
 }
 p {
-  font-family: "Roboto", sans-serif;
   font-size: 5vw;
 }
 .cliquez {

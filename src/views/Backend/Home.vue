@@ -23,7 +23,6 @@
         ></b-table>
       </div>
       <a class="button" download="data.csv" :href="dataURL">{{$t('backend.exportCSV')}}</a>
-      <a class="button" download="data.csv" :href="dataURL">{{$t('backend.exportCSV')}}</a>
     </div>
   </section>
 </template>
