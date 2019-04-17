@@ -158,7 +158,7 @@ p {
 /*----------------CHEMINEE-----------------------*/
 #cheminee_bloc {
   text-align: right;
-  top: 95vmin;
+  top: 95vw;
 }
 
 #cheminee_bloc img {
@@ -170,7 +170,7 @@ p {
 /*----------------VITRE-----------------------*/
 #vitre_bloc {
   text-align: right;
-  top: 150vmin;
+  top: 150vw;
 }
 
 #vitre_bloc img {
@@ -182,7 +182,7 @@ p {
 /*----------------CLOTURE DU FOND-----------------------*/
 #clotureBack_bloc {
   text-align: left;
-  top: 250vmin;
+  top: 250vw;
 }
 
 #clotureBack_bloc img {
@@ -193,7 +193,7 @@ p {
 }
 /*----------------CLOTURE DU PREMIER PLAN-----------------------*/
 #clotureFront_bloc {
-  top: 500vmin;
+  top: 500vw;
 }
 
 #clotureFront_bloc img {
@@ -216,7 +216,7 @@ p {
 /*----------------PISCINE-----------------------*/
 #piscine_bloc {
   text-align: right;
-  top: 400vmin;
+  top: 400vw;
 }
 
 #piscine_bloc img {
@@ -297,12 +297,22 @@ i {
     height: 222vmax;
   }
 
-  .header {
-    padding: 6vmax 0;
-    background-color: #fff;
+  .header{
+    padding:6vmax 0;
+    background-color:#fff;
     height: 20vmax;
-  }
+}
 
+h1 {
+  font-size: 3vmax;
+  padding: 0 20vmax;
+}
+p {
+  font-size: 1.7vmax;
+}
+.cliquez {
+  padding: 0 10vmax;
+}
   h1 {
     font-size: 3vmax;
     padding: 0 20vmax;
