@@ -71,6 +71,7 @@ export default {
 .cstButton {
   margin-top:5%;
   width: 150px;
+  font-family: "Fjalla One", sans-serif;
 }
 
 .quizz {

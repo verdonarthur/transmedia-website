@@ -40,9 +40,9 @@
 @import "~normalize.css/normalize.css";
 @import "~bulma/sass/utilities/_all";
 
-$primary: rgb(38, 148, 38);
+$primary: #269424;
 $primary-invert: findColorInvert($primary);
-$success: rgb(38, 148, 38);
+$success: #269424;
 $success-invert: findColorInvert($success);
 
 $colors: (
@@ -96,6 +96,7 @@ h2.subtitle {
   font-weight: normal;
   font-family: "Fjalla One", sans-serif;
 }
+
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
 </style>
