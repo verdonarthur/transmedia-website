@@ -1,9 +1,9 @@
 <template>
-  <div class="cgu">
+  <div class="cgp">
     <div class="section">
-      <h1 class="title is-1">{{$t('cgu.generalConditionParticipationCompetition')}}</h1>
+      <h1 class="title is-1">{{$t('cgp.generalConditionParticipationCompetition')}}</h1>
 
-      <div v-for="(value, key) in cgus" :key="key" class="content is-small">
+      <div v-for="(value, key) in cgps" :key="key" class="content is-small">
         <template v-if(value.title)>
           <h2>{{value.title}}</h2>
           <div v-html="value.content" class="content is-small"></div>
@@ -15,10 +15,10 @@
 
 <script>
 export default {
-  name: 'cgu',
+  name: 'cgp',
   data () {
     return {
-      cgus: this.$t('cgu')
+      cgps: this.$t('cgp')
     }
   }
 }

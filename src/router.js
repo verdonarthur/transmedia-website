@@ -42,9 +42,9 @@ export default new Router({
       name: 'registerConfirm',
       component: () => import('./views/RegisterConfirm.vue')
     }, {
-      path: '/cgu',
-      name: 'cgu',
-      component: () => import('./views/CGU.vue')
+      path: '/cgp',
+      name: 'cgp',
+      component: () => import('./views/CGP.vue')
     },
 
     // --------- ADMIN PANEL --------
