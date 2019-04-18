@@ -7,7 +7,7 @@
   },
   "trapsPage": {
     "title": "C'est parti !",
-    "description": "Cliquez sur les pièges mis en évidence pour plus d’informations à leur sujet, puis participez à notre quiz-concours sur les pièges !",
+    "description": "Cliquez sur les pièges mis en évidence pour plus d’informations à leur sujet, puis participez à notre concours sur les pièges !",
     "allTrapsFound": "Avez-vous trouvé tous les pièges autour de la maison ?",
     "goQuizz": "Participez à notre concours !",
     "link-to-quizz": "Je participe au concours"
@@ -78,7 +78,7 @@
   "quizzPage": {
     "title": "Concours pièges pour la faune !",
     "sous-titre": "Comment les éviter ?",
-    "description": "Testez vos connaissances avec 6 questions sur ce que vous avez lu précédemment",
+    "description": "Testez vos connaissances avec 6 questions sur ce que vous avez lu précédemment.",
     "description2": "Gagnez des prix !",
     "startButton": "C'est parti !",
     "prices": {
