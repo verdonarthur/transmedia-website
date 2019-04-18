@@ -1,5 +1,5 @@
 <template >
-  <div  id="home" class="home">
+  <div id="home" class="home">
     <img src="../assets/logo-birdlife.png" alt="BirdLife logo" class="logo">
     <h1 class="title is-4">{{ $t("landingPage.title") }}</h1>
     <h2 class="sous-titre subtitle is-5">{{$t("landingPage.sous-titre")}}</h2>
@@ -70,17 +70,15 @@ i {
 }
 /*-----PC-----*/
 @media screen and (min-width: 769px) {
-h1 {
-  font-size: 5vw;
-  line-height: 9vw;}
+  h1 {
+    line-height: 9vw;
+  }
 
-p {
-  font-size: 2.0vw;
-  padding: 0 12vw;
-}
-.sous-titre {
-  font-size: 4vw;
-  margin: 0 0 3vh 0;
-}
+  p {
+    padding: 0 12vw;
+  }
+  .sous-titre {
+    margin: 0 0 3vh 0;
+  }
 }
 </style>

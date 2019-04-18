@@ -97,6 +97,10 @@ h2.subtitle {
   font-family: "Fjalla One", sans-serif;
 }
 
+html,body,#app{
+  background:#eeeeee
+}
+
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
 </style>

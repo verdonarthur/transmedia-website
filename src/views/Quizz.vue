@@ -29,7 +29,7 @@
       </div>
     </div>
     <router-link
-      to="quizz/question/1"
+      to="/quizz/question/1"
       class="button cstButton is-success"
     >{{$t("quizzPage.startButton")}}</router-link>
   </div>

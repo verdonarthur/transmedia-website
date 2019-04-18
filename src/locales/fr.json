@@ -138,11 +138,11 @@
     "address": "Adresse",
     "email": "E-mail",
     "acceptNewsletter": "J'accepte de recevoir la newsletter",
-    "acceptCGU": "J'accepte les ",
+    "acceptCGP": "J'accepte les ",
     "participate": "Envoyer"
   },
   "register": {
-    "mustAcceptCGU": "Vous devez accepter les CGP",
+    "mustAcceptCGP": "Vous devez accepter les CGP",
     "goHome": "Revenir à l'accueil",
     "confirm": "Merci pour votre participation"
   },
