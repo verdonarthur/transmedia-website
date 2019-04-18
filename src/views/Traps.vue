@@ -119,7 +119,7 @@ export default {
   height: 250px;
 }
 .pieges {
-  background-image: url("../assets/fond_website-compressed.jpg");
+  background-image: url("../assets/fond_website.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
