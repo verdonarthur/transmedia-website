@@ -14,7 +14,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style scoped>
 .questionTmpl{
   min-height: 100vh;
 }
