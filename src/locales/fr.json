@@ -142,7 +142,7 @@
     "participate": "Envoyer"
   },
   "register": {
-    "mustAcceptCGU": "Vous devez accepter les CGU",
+    "mustAcceptCGU": "Vous devez accepter les CGP",
     "goHome": "Revenir à l'accueil",
     "confirm": "Merci pour votre participation"
   },
@@ -161,7 +161,7 @@
     "fieldEmail": "E-mail",
     "fieldCanSendNewsltetter": "Newsletter"
   },
-  "cgu": {
+  "cgp": {
     "generalConditionParticipationCompetition": "Condition générale de participation au concours",
     "principle": {
       "title": "1. Principe",

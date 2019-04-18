@@ -46,20 +46,20 @@
           </div>
 
           <div class="field">
-            <b-checkbox v-model="acceptCGU">
-              {{$t('registerPage.acceptCGU')}}
+            <b-checkbox v-model="acceptCGP">
+              {{$t('registerPage.acceptCGP')}}
               <a
-                :href="($router.resolve({name:'cgu'})).href"
+                :href="($router.resolve({name:'cgp'})).href"
                 target="_blank"
-              >CGU</a>
+              >CGP</a>
             </b-checkbox>
           </div>
 
           <b-message
             type="is-danger"
-            :active.sync="mustAcceptCGU"
+            :active.sync="mustAcceptCGP"
             has-icon
-          >{{$t('register.mustAcceptCGU')}}</b-message>
+          >{{$t('register.mustAcceptCGP')}}</b-message>
 
           <b-message
             type="is-danger"
@@ -92,9 +92,9 @@ export default {
       street: '',
       npa: '',
       city: '',
-      acceptCGU: false,
+      acceptCGP: false,
       acceptNewsletter: false,
-      mustAcceptCGU: false,
+      mustAcceptCGP: false,
       unknownError: false
     }
   },
@@ -106,14 +106,14 @@ export default {
 
       // TODO VERIFI DATA
 
-      // user Must accept CGU !!
-      if (!this.acceptCGU) {
-        this.mustAcceptCGU = true
+      // user Must accept CGP !!
+      if (!this.acceptCGP) {
+        this.mustAcceptCGP = true
         loadComp.close()
         return
       }
 
-      this.mustAcceptCGU = false
+      this.mustAcceptCGP = false
       this.unknownError = false
 
       let participant = new Participant({
