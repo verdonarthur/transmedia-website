@@ -28,7 +28,9 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
+@import "~bulma/sass/utilities/_all";
+
 .home {
   background-color: #eee;
   min-height: 100vh; /* Doit être >100% pour que la fonction de scroll fonctionne */
@@ -46,7 +48,7 @@ p {
 
 .sous-titre {
   margin: 0 0 3vh 0;
-  color: rgb(38, 148, 38);
+  color: #269424;
 }
 
 .description {
