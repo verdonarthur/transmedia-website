@@ -162,18 +162,18 @@
     "fieldCanSendNewsltetter": "Newsletter"
   },
   "cgp": {
-    "generalConditionParticipationCompetition": "Condition générale de participation au concours",
+    "generalConditionParticipationCompetition": "Conditions générales de participation au concours",
     "principle": {
       "title": "1. Principe",
-      "content": "<p>Le but du concours est de à répondre à six questions concernant les pièges qui menacent la faune en milieu urbain.</p><p>Ce concours est organisé par BirdLife Suisse ayant son siège à La Sauge 1588 Cudrefin.</p>"
+      "content": "<p>Le but du concours est de répondre à six questions concernant les pièges qui menacent la faune en milieu urbain.</p><p>Ce concours est organisé par BirdLife Suisse ayant son siège à La Sauge 1588 Cudrefin.</p>"
     },
     "calendar": {
       "title": "2. Calendrier",
-      "content": "<ul><li>Début du concours : date de début du concours</li><li>Fin des inscriptions : date de fin du concours</li><li>Annonce des gagnants : date de l'anonce des gagnants</li></ul>"
+      "content": "<ul><li>Début du concours : date de début du concours</li><li>Fin des inscriptions : date de fin du concours</li><li>Annonce des gagnants : date de l'annonce des gagnants</li></ul>"
     },
     "conditionsOfParticipation": {
       "title": "3. Conditions de participation",
-      "content": "<p>La participation au concours est gratuite et est ouverte à toute personne domiciliés en Suisse et majeure.</p><p>Les collaborateurs de BirdLife Suisse ne wont pas autorisés à participer au concours.</p>"
+      "content": "<p>La participation au concours est gratuite et est ouverte à toute personne domiciliée en Suisse et majeure.</p><p>Les collaborateurs de BirdLife Suisse ne sont pas autorisés à participer au concours.</p>"
     },
     "competitionProcedure": {
       "title": "4. Déroulement du concours",
@@ -189,7 +189,7 @@
     },
     "prices": {
       "title": "7. Prix",
-      "content": "<p>Les gagnants sont les participants ayant le mieux répondu aux questions. Ils seront contactés par BirdLife Suisse. Aucune correspondance ne sera échangée avec les autres participants pour les informer du résultat.</p><p>Les prix ne sont ni échangeables, ni transmissibles. Les prix ne sont en aucun cas convertibles en espèces.</p><p>Les organisateurs se réservent le droit de modifier en tout temps les prix qui seront remis aux gagnants du concours.</p><ul><li>1 bon de 100.- sur le shop en ligne de BirdLife Suisse</li><li>5 set de brochures BirdLife Suisse</li><li>5 entrées au centre nature de la Sauge</li></ul>"
+      "content": "<p>Les gagnants sont les participants ayant le mieux répondu aux questions. Ils seront contactés par BirdLife Suisse. Aucune correspondance ne sera échangée avec les autres participants pour les informer du résultat.</p><p>Les prix ne sont ni échangeables, ni transmissibles. Les prix ne sont en aucun cas convertibles en espèces.</p><p>Les organisateurs se réservent le droit de modifier en tout temps les prix qui seront remis aux gagnants du concours.</p><ul><li>1 bon de 100.- sur le shop en ligne de BirdLife Suisse</li><li>5 sets de brochures BirdLife Suisse</li><li>5 entrées au centre nature de la Sauge</li></ul>"
     },
     "authorization": {
       "title": "8. Autorisation",
