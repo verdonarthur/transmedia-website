@@ -51,11 +51,11 @@
 }
 #yellow .check
 {
-  background-color: yellow;
+  background-color: #50280C;
 }
 #blue .check
 {
-  background-color: blue;
+  background-color: lightgreen;
 }
 #black .check
 {

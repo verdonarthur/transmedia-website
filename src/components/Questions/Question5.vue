@@ -39,10 +39,10 @@
 @media screen and (min-width: 769px) {
  #garden .checkbox
  {
- margin: 25px;
+  margin: 25px;
  }
 
-  }
+}
 </style>
 
 <script>

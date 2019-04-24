@@ -17,36 +17,36 @@
       "problem": {
         "title": "Les cheminées",
         "subTitle": "Pourquoi sont-elles dangereuses pour les oiseaux ?",
-        "mainText": "Les oiseaux aiment chanter depuis des perchoirs élevés. Aussi incroyable que cela paraisse, il leur arrive parfois de tomber dans la cheminée ou le tuyau de la gouttière. Les juvéniles inexpérimentés, surtout, peuvent se trouver coincés dans un poêle, une cheminée ou une gouttière et doivent être délivrés par les pompiers ou le ramoneur. Certains oiseaux ont même l’habitude de nicher directement dans la cheminée. De ce fait, si la cheminée est plutôt étroite et le nid volumineux, l’évacuation des fumées ne se fait plus correctement et il y a un envahissement de la fumée dans la pièce."
+        "mainText": "Les oiseaux aiment chanter depuis des perchoirs élevés. Aussi incroyable que cela paraisse, il leur arrive parfois de tomber dans la cheminée ou le tuyau de la gouttière. Les juvéniles inexpérimentés, surtout, peuvent se trouver coincés dans un poêle, une cheminée ou une gouttière et doivent être délivrés par les pompiers ou le ramoneur. Certains oiseaux ont même l’habitude de nicher directement dans la cheminée. Si la cheminée est plutôt étroite et le nid volumineux, l’évacuation des fumées ne se fait plus correctement et les pièces à vivre risquent d’être enfumées."
       },
       "solution": {
         "title": "Les cheminées",
         "subTitle": "Solutions possibles",
-        "mainText": "Les chapeaux de cheminée permettent d’éviter que les oiseaux tombent dans l'ouvrage. Ils ne doivent pas avoir d’ouverture excédant 25 mm. Un grillage ou un chapeau de cheminée installé par un spécialiste empêche le colmatage par nidification et ainsi une intoxication à la fumée. On peut offrir aux oiseaux un site de nidification alternatif en installant des nichoirs adaptés sur la maison ou un arbre à proximité. Les gouttières peuvent être fermées avec des grilles. Les feuilles mortes doivent être régulièrement évacuées."
+        "mainText": "Les chapeaux de cheminée permettent d’éviter que les oiseaux tombent dans l'ouvrage. Ils ne doivent pas avoir d’ouverture excédant 25 mm. Un grillage ou un chapeau de cheminée installé par un spécialiste empêcheront également que des oiseaux bouchent la cheminée en essayant d’y construire un nid. On peut offrir aux oiseaux un site de nidification alternatif en installant des nichoirs adaptés sur la maison ou un arbre à proximité. Quant aux gouttières, elles peuvent être fermées avec des grilles afin d’éviter que les jeunes oiseaux s’y retrouvent piégés."
       }
     },
     "windows": {
       "problem": {
         "title": "Les vitres",
         "subTitle": "Pourquoi sont-elles dangereuses pour les oiseaux et chauve-souris ?",
-        "mainText": "Le verre est utilisé à de multiples endroits, on fabrique aujourd’hui des façades, des balustrades de balcon, des passerelles, des jardins d’hiver, des salles d’attente et des parois anti-bruit. La plupart des architectes et propriétaires de bâtiments ignorent les effets mortels de ce matériau. Les oiseaux ne sont pas capables de reconnaître les vitres comme obstacle. Ils croient parfois y voir se refléter un habitat adéquat et essaient de s’y rendre. Selon les estimations, des centaines de milliers d’oiseaux et de chauve-souris meurent chaque année en Suisse des suites d’une collision contre une surface vitrée."
+        "mainText": "Le verre est utilisé à de multiples endroits. On l’utilise aujourd’hui pour fabriquer des façades, des balustrades de balcon, des passerelles, des jardins d’hiver, des salles d’attente et des parois anti-bruit. La plupart des architectes et propriétaires de bâtiments ignorent les effets mortels de ce matériau. Le premier problème est que les vitres transparentes sont invisibles pour les oiseaux. Ils choisissent donc la route qui leur semble la plus rapide : à travers la vitre. Le deuxième problème est posé par les vitres fortement réfléchissantes. Parfois les oiseaux voient s’y refléter des habitats qui leur semblent adéquats, comme des buissons ou des arbres, et essaient de s’y rendre. Selon les estimations, des centaines de milliers d’oiseaux et de chauve-souris meurent chaque année en Suisse des suites d’une collision contre une surface vitrée."
       },
       "solution": {
         "title": "Les vitres",
         "subTitle": "Solutions au problème des vitres",
-        "mainText": "De manière générale, le verre devrait être rendu visible, avant même sa mise en place, grâce à des marquages graphiques. Ces derniers sont appliqués par sérigraphie, gravure, sablage, etc. Après la construction, si l’on remarque des collisions, des autocollants ou des films peuvent être appliqués sur la surface vitrée. Les silhouettes de rapaces noires ou jaunes (ou encore foncées) n’ont aucun effet répulsif sur les oiseaux, contrairement aux marquages clairs qui sont en général plus visibles (comme le gris clair ou le vert clair). De plus, les oiseaux passent par de petites ouvertures. Les marquages ou autocollants ne devraient donc pas laisser d’ouvertures plus grandes qu’une paume de main (max. 10 cm)."
+        "mainText": "De manière générale, le verre devrait être rendu visible, avant même sa mise en place, grâce à des marquages graphiques. Ces derniers peuvent être appliqués par sérigraphie, gravure, sablage, etc. Le rendu est très esthétique. Après la construction, si l’on remarque des collisions, des autocollants ou des films peuvent être appliqués sur la surface vitrée. Mais attention aux idées reçues : les silhouettes de rapaces n’ont aucun effet répulsif ! Peu importe le motif, l’important est que le marquage soit appliqué de façon dense (10 cm maximum entre chaque motif). Les motifs de couleur claire sont mieux perçus par les oiseaux que les motifs foncés, peu visibles par faible éclairage."
       }
     },
     "lawnMower": {
       "problem": {
         "title": "Les robots tondeuses",
         "subTitle": "Pourquoi sont-ils dangereux pour la petite faune?",
-        "mainText": "Il est très confortable de faire tondre son gazon par un robot tondeuse, mais cet dernier ne tond pas seulement l’herbe. Elle attrape aussi tout ce qui se trouve sur son passage. Les jeunes hérissons, les petites grenouilles et les orvets sont hachés par les lames lorsqu’ils se trouvent sur le chemin de la tondeuse."
+        "mainText": "Il est très confortable de faire tondre son gazon par un robot tondeuse, mais cet dernier ne tond pas seulement l’herbe. Il attrape aussi tout ce qui se trouve sur son passage. Les jeunes hérissons, les petites grenouilles et les orvets sont hachés par les lames lorsqu’ils se trouvent sur le chemin de la tondeuse."
       },
       "solution": {
         "title": "Les robots tondeuses",
         "subTitle": "Solutions aux robots tondeuses",
-        "mainText": "Les robots tondeuses ne devraient en aucun cas fonctionner la nuit. La surface à tondre devrait aussi être contrôlée le jour pour détecter la présence d’éventuels animaux. Lorsque l’on fauche des bords de haie avec une débroussailleuse, il faut aussi vérifier au préalable qu’il n’y ait pas de hérisson ou d’autres animaux."
+        "mainText": "Les robots tondeuses ne devraient en aucun cas fonctionner durant la nuit, car de nombreux animaux se déplacent à ce moment-là. Dans tous les cas, la surface à tondre devrait être contrôlée le jour pour détecter la présence d’éventuels animaux. De même, lorsque l’on fauche des bords de haie avec une débroussailleuse, il est également important de vérifier au préalable qu’il n’y ait pas de hérisson ou d’autres animaux qui s'y cachent."
       }
     },
     "pool": {
@@ -58,22 +58,22 @@
       "solution": {
         "title": "Les piscines et tonneaux d’eau de pluie",
         "subTitle": "Solutions aux piscines et tonneaux d'eau de pluie",
-        "mainText": "Il est important de créer des «issues de secours» à chaque point d’eau problématique. Il peut s’agir de pierres empilées en pyramide, d’une planche placée en biais ou d’une branche épaisse. Une planche flottante à bords en biais dans les plans d’eau dépourvus de végétation permet aux insectes et autres petits animaux de reprendre pied. Le mieux est toutefois de construire les plans d’eau avec des rives en pente douce. Les tonneaux et autres récipients d’eau de pluie devraient être recouverts pour éviter que les oiseaux n’y tombent et que les moustiques n’y pondent. Les piscines devraient également être recouvertes le soir et en hiver à hauteur de sol."
+        "mainText": "Il est important de créer des «issues de secours» à chaque point d’eau problématique. Il peut s’agir de pierres empilées en pyramide, d’une planche placée en biais ou d’une branche épaisse. De telles structures permettent aux insectes et autres petits animaux de reprendre pied dans les plans d'eau dépourvus de végétation. Le mieux est toutefois de construire les plans d’eau avec des rives en pente douce ou des étangs-piscines. En outrle, les tonneaux et autres récipients d’eau de pluie devraient être recouverts pour éviter que les oiseaux n’y tombent et que les moustiques n’y pondent. Les piscines devraient également être recouvertes le soir et en hiver à hauteur de sol."
       }
     },
     "fence": {
       "problem": {
         "title": "Les murs et clôtures",
         "subTitle": "Pourquoi sont-ils dangereux?",
-        "mainText": "Les quartiers récents de villas familiales ressemblent souvent à des forteresses. Les parois anti-bruit et pare-vue, les clôtures et les haies empêchent tout échange avec le monde extérieur. Pour de nombreux animaux, les murs de quelques centimètres de haut constituent déjà des obstacles. A partir de 20 cm, ils deviennent problématiques pour les hérissons. Les murs à partir de 50 cm, les parois anti-bruit et pare-vue, ainsi que les clôtures qui vont jusqu’au sol cloisonnent si fortement le milieu construit que de nombreux animaux n’atteignent plus les îlots d’habitats naturels qui s’y trouvent."
+        "mainText": "Les quartiers récents de villas familiales ressemblent souvent à des forteresses. Les parois anti-bruit et pare-vue, les clôtures et les haies de lauriers-cerises ou de thuyas empêchent tout échange avec le monde extérieur. Pour les batraciens, un mur de quelques centimètres de haut constitue déjà un obstacle. A partir de 20 cm, les murets deviennent problématiques pour les hérissons. Les murs, les parois anti-bruit et pare-vue, ainsi que les clôtures qui vont jusqu’au sol cloisonnent si fortement le milieu construit que de nombreux animaux n’atteignent plus les îlots d’habitats naturels qui se trouvent de l’autre côté."
       },
       "solution": {
         "title": "Les murs et clôtures",
         "subTitle": "Solutions aux murs et clôtures",
-        "mainText": "Lors de la construction, il est important de réfléchir à l’endroit où les séparations sont effectivement nécessaires et à encourager la mise en réseau des espaces. La connexion peut être améliorée si les clôtures s’arrêtent à environ 15 cm du sol. Les murs et les clôtures peuvent souvent être remplacés par des haies d’arbustes indigènes qui offrent à la fois une protection visuelle et un habitat précieux. Si l’on ne peut pas renoncer à un mur, il faudrait munir celui-ci de petits passages au niveau du sol de 15-20 cm de haut et de large. Les prairies et les haies devraient se situer au niveau de la route et ne pas être surélevées au-dessus d’un seuil."
+        "mainText": "Lors de la construction, il est important de réfléchir à l’endroit où les séparations sont effectivement nécessaires et à encourager la mise en réseau des espaces naturels. Si les clôtures s’arrêtent à environ 15 cm du sol, les petits animaux ont la possibilité de se déplacer librement d’un côté à l’autre. Alternativement, les murs et les clôtures peuvent souvent être remplacés par des haies d’arbustes indigènes qui offrent à la fois une protection visuelle et un habitat précieux. Si l’on ne peut pas renoncer à un mur, il faudrait y aménager de petits passages 15-20 cm de haut et de large. Pour finir, les prairies et les haies devraient se situer au niveau de la route et ne pas être surélevées au-dessus d’un seuil."
       }
     },
-    "learnMore": "Comment contrer ?"
+    "learnMore": "comment l’éviter ?"
   },
   "quizzPage": {
     "title": "Concours pièges pour la faune !",
@@ -83,13 +83,13 @@
     "startButton": "C'est parti !",
     "prices": {
       "coupon": "1 bon cadeau de 100 CHF",
-      "ticket": "5 entrées au centre nature de la Sauge",
-      "brochures": "5 collections de brochures"
+      "ticket": "5 entrées au \"Centre-nature\" de la Sauge",
+      "brochures": "5 collections de brochures \"BirdLife actif\""
     },
     "link-to-register": "Inscrivez-vous"
   },
   "question1": {
-    "title": "Sélectionnez la bonne hauteur pour les clôtures.",
+    "title": "Sélectionnez l’espace idéal à laisser entre une clôture et le sol.",
     "fenceHeight": "Hauteur de la clôture (cm)"
   },
   "question2": {
@@ -105,10 +105,10 @@
     "title": "Choisissez les couleurs qui sont les plus adaptées pour les autocollants de vitre, et la distance maximum qui devrait être laissée entre eux.",
     "distancechoice": "Distance entre les autocollants en cm",
     "colorchoice": "Couleurs",
-    "color1": "jaune",
-    "color2": "bleu",
-    "color3": "noir",
-    "color4": "blanc"
+    "color1": "Brun foncé",
+    "color2": "Vert clair",
+    "color3": "Noir",
+    "color4": "Blanc"
   },
   "question5": {
     "title": "Quels éléments de la photo sont des pièges pour la faune ?",
@@ -119,7 +119,7 @@
   },
   "question6": {
     "title": "Sélectionnez le ou les style(s) de cheminée qui empêche(nt) les oiseaux de tomber à l’intérieur.",
-    "maxopening": "Indiquez l'ouverture maximum que le chapeau devrait avoir en mm",
+    "maxopening": "Indiquez l'ouverture maximum (en mm) que le chapeau devrait avoir.",
     "chimneychoice": "Les cheminées",
     "chimney1": "",
     "chimney2": ""
